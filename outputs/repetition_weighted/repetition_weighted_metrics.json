@@ -1,0 +1,166 @@
+{
+  "experiment": "repetition_weighted_training",
+  "model": "logistic_regression",
+  "test_group_ids": [
+    "00efcd0f08db874842d18f19a10747b1a78fd78cc29d147ed06746f0aeecc7dc",
+    "04646f67c1ffb8b229e72d0fe24da7b99874ed3491dc6b0228750cbfa7f2cb24",
+    "06a34b269352a33c115f788d694afc4ba07be1929f1ec4835e638f3cf1dba6bb",
+    "07236a28c5f52d8c2aa76361308d5a15ec820c0a65353406518ef78dda73ded9",
+    "0ccf14389a963d48e004113394b3a2f471eaac2b93aec1dac63175398f187afd",
+    "1030d9bbe09e07182b7d28a3a8a04f78c8aadc5ddee469302befa6c7f0bcd625",
+    "1aee97b08276c7517058cde71ba2e1e0c58f8848ffe6e4aff263fd57b515e587",
+    "1fa4bcbe77dcd55c1c74669b0d3487c23fbfc9a13721609ea25f51e562d603ab",
+    "1ff46e0483cbf49dbe3624ca3cc23d068b669f6c225003a42484054c73d75ba0",
+    "23ed059869f6c1afcd09b196e796988f5eea1973e88e52e8a44beb0ff35e4457",
+    "24570ebb1034cb4697a4471c9355a69f3249735f7d9fd923401e6f5ab1035f12",
+    "2754c37c395a88ff0d419fc8b9703176c9c56116a1a638c323b189c4c1fe3dd7",
+    "27f58622864d217ed8c7ca30b321b0eafa1d6c599e57579ebc579691d137f2d8",
+    "2f1e466e8b88739333b5340aaf307b22359f620ce47253b860c2cafc69526f03",
+    "376629d252e21d46601aaa2b226335bd246434c5d3da80a87eaf29876be78c55",
+    "3bffbffa715191f503c4a4c2314090d97c79030b124a3b27e84890199e7a8f2b",
+    "3d33bc9463e7c33f518ab655993b9f781e3be5cb7a1c9bfe175f92b60dcd2613",
+    "3e98a544e19cf7567bae4c115de6e5f27624effefccfad2a95d4d4a889417088",
+    "3ea3cc9c251cb00d4cd764a1014b4526f42f959fb5870cc8dc9a622f847addf1",
+    "421e3acb4b57eb58410e4276a6498e8bc39389ad128e7c7a59091291fcd0275a",
+    "5602140911692ba940f6d47f43cfbe7e24f6c502af3472801a5f6c4f00adde73",
+    "652bedb51ed04195f9b6db839a01a12f1c899e84b2c4de10ded37ed50519cdf4",
+    "65684880c5e1e32705900365c76289224ef388c226cedb9fc5cf9205de242410",
+    "66462442c59b32e61a8c3524dd3703ce118e47f77cdff01924d3f5bbb64f2dbf",
+    "68d75c45084b6efac5d05ce6d70ff9e0bc3b5e1fa08ca26671a3b3218e4b4cef",
+    "6d17cf05200500a503fbbd130f852633a3fa56977e59c320896d3b69a0b64f33",
+    "717a078e2e8be7277e3906efae4c7a8126a752273c690db3cc08505c141d56ff",
+    "73d6e2ede5803e93f0b607cac2296734d1de4a2725a8213dede5db0a488f74b1",
+    "7e8d9f9c5869aa4f319dd434eba7de79f30ecffd53806261d43ce087a1fd7e3e",
+    "80c742d84f95bec4de97f8a03402cd1311fefb2bbd629cda6733ec49c9c7dbe7",
+    "80d441b0530a8c3c3a014666772785f6948f9f59b2fbe4dca24ef6b4e4bbf7d2",
+    "8209afdfc4f413d00c86b7537bbec68d79514b004420fea13039b4e34bab3f65",
+    "82a729e79d9a22a70c04d11594bf838f531727d9df814c2e8f0d1d97c4e0d8ef",
+    "8d3e8dbe93157da0e9d633d3862e433fa85b14ee806b0f0b8fb51579cf367089",
+    "91f1fe0c1afab92ecaff95c1f6f3213dae324ce38e46f2b944c8681a6a32e481",
+    "9abb8821e20fa4f3eb819f707d1cdf05418a742a223ba0e93ff8f9f76719ce6b",
+    "a5e27c472533ddd3b572d0bd17073ae93f813d0dd4c26c8be81d26c192386e62",
+    "abc59bab2e53c24ac19432001219562623079a984cbfbcf5409f2fb4935fd9bd",
+    "ad7183056d734299ca254ede7e184750bd0345f73c1dcd9fd0a638e853081569",
+    "b4298434e7d0bab5069a26d3f7655660f9d9e3eef72e0b5854dbdf30fb4a6b3f",
+    "bb1930e4e9330814ee1c7d0c8b40c5ba051325c8703d42c3a5655323dd35a68d",
+    "c221199c5bd9f20988d4207d50b2948464323577aa37d5dade5dd1450bf5904a",
+    "c23cf2fb25dc504ed1e89facab54621d597f07f16441f48179db2de6f77cdb5d",
+    "c820e3844835f5be163a9676dde07d213f0f8b84ea65504f146ff83c1b42253b",
+    "c9246dfbc22ee6805ce09f105ff30b46cace541927305f4be922f0b6212fccd6",
+    "cd19400fa2750e50b694144f670a249f901cf8a1802bea61873fceb002e85ea3",
+    "cfe578d824a64a935d1ca438f17244b3531cc3e0c08f4418890f5384d15894c6",
+    "d098aebb2c0d3f32ac82709a67d0859e588206a644400232fa7ae99d21c8e0f8",
+    "d481fbc86511c1e5be946e7fb2c03881f87086844973436833605ec0b5d44b41",
+    "d7f0b6bf362030cda6a4091e5bb648974fc9b04dc0759e79e46442b79f7aec71",
+    "d8d05858f6c6c77ee91db71d4bab1b1750aa0b43f5f9b002f0af6aa1da0fe5b8",
+    "db9c4289c1a8f0cdc9e38570677bfb636d1cf32c7b2693d674520cfa5c1d40e3",
+    "dd50184de273af2a3d578585f291921aac3536f436834c3d87755754b64079b0",
+    "dd675e4feb4e4f46d13a05b564231fac8a0c5d23fbffcb1d10ff7aea515bafc1",
+    "ddc3f39e5ad7141f45bc45b7520750a55186d88a762f5abbbef5525f30da815c",
+    "ddcd413a1afaff6d3ca9d53ec460165936f280c13bd8ec6a099d3f290abf9589",
+    "e0fa80ca1211201d49a550dd03fc4c49a024306027a3766883b2e914c7c59b9f",
+    "ec54dc21b3526091b69bb97c143065befaf49b0fff5b5b0edbe9926b1cdd49f3",
+    "ed440e129a3168a8a972629a667392a39fae8a93d7e4538e896df0e0717b4496",
+    "f5fd06ea68a4406ae19dde6a0ac1d0acbdebbf6504848d53aeab419561219e0e",
+    "fd879715d2b755ead328e0e559498cfac30f4c585f11aa98b2f1759be0cb79fc"
+  ],
+  "counts": {
+    "development": {
+      "groups": 241,
+      "original_rows": 811,
+      "group_class_counts": {
+        "0": 110,
+        "1": 131
+      },
+      "row_class_counts": {
+        "0": 395,
+        "1": 416
+      }
+    },
+    "test": {
+      "groups": 61,
+      "original_rows": 214,
+      "group_class_counts": {
+        "0": 28,
+        "1": 33
+      },
+      "row_class_counts": {
+        "0": 104,
+        "1": 110
+      }
+    }
+  },
+  "distinct_group": {
+    "n": 61,
+    "class_counts": {
+      "0": 28,
+      "1": 33
+    },
+    "confusion_matrix": [
+      [
+        18,
+        10
+      ],
+      [
+        5,
+        28
+      ]
+    ],
+    "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+    "sensitivity": 0.8484848484848485,
+    "specificity": 0.6428571428571429,
+    "precision": 0.7368421052631579,
+    "f1": 0.7887323943661971,
+    "accuracy": 0.7540983606557377,
+    "roc_auc": 0.8398268398268399,
+    "denominators": {
+      "sensitivity": 33,
+      "specificity": 28,
+      "precision": 38,
+      "f1": 71,
+      "accuracy": 61,
+      "roc_auc_positive_negative_pairs": 924
+    },
+    "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent",
+    "group_count": 61,
+    "represented_original_rows": 214
+  },
+  "original_row_weighted": {
+    "n": 214,
+    "class_counts": {
+      "0": 104,
+      "1": 110
+    },
+    "confusion_matrix": [
+      [
+        66,
+        38
+      ],
+      [
+        17,
+        93
+      ]
+    ],
+    "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+    "sensitivity": 0.8454545454545455,
+    "specificity": 0.6346153846153846,
+    "precision": 0.7099236641221374,
+    "f1": 0.7717842323651453,
+    "accuracy": 0.7429906542056075,
+    "roc_auc": 0.8373251748251748,
+    "denominators": {
+      "sensitivity": 110,
+      "specificity": 104,
+      "precision": 131,
+      "f1": 241,
+      "accuracy": 214,
+      "roc_auc_positive_negative_pairs": 11440
+    },
+    "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent",
+    "group_count": 61,
+    "represented_original_rows": 214
+  },
+  "threshold": 0.5,
+  "positive_class": "numeric target=1; semantics unverified",
+  "secondary_exploratory_shared_holdout": true
+}

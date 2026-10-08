@@ -1,0 +1,42 @@
+{
+  "python": "3.12.10",
+  "executable": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-27\\we-are-building-cardiolens-ai-an\\work\\baseline-env\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.3.3",
+  "scipy": "1.16.2",
+  "scikit_learn": "1.7.2",
+  "joblib": "1.5.2",
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libscipy_openblas",
+      "filepath": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-27\\we-are-building-cardiolens-ai-an\\work\\baseline-env\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-860d95b1c38e637ce4509f5fa24fbf2a.dll",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 4,
+      "prefix": "vcomp",
+      "filepath": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-27\\we-are-building-cardiolens-ai-an\\work\\baseline-env\\Lib\\site-packages\\sklearn\\.libs\\vcomp140.dll",
+      "version": null
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 4,
+      "prefix": "libscipy_openblas",
+      "filepath": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-27\\we-are-building-cardiolens-ai-an\\work\\baseline-env\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-48c358d105077551cc9cc3ba79387ed5.dll",
+      "version": "0.3.29.dev",
+      "threading_layer": "pthreads",
+      "architecture": "SkylakeX"
+    }
+  ],
+  "fit_thread_limit": 1,
+  "runner_sha256": "66bd1d403f5560c5a373f4d9acc25e9aad48521aa264ac3337bf5410f0662241",
+  "config_sha256": "990f6e3a6c989f0cb59c872ad87660fd8056e055603f5088ff35bb628868c192"
+}

@@ -1,0 +1,4 @@
+# Preserve the exact bytes of frozen research and API artifacts.
+* -text
+*.joblib binary
+*.png binary

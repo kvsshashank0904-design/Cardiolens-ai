@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "source_unchanged": true,
+  "verified": [
+    "source-row and group-key reconstruction",
+    "all label and feature values preserved",
+    "saved split and folds reproduce from seed",
+    "CV/final fit membership and one row per group",
+    "training-only scaler/category trace",
+    "development-only selection and frozen decision hash",
+    "complete test-row prediction expansion",
+    "independent confusion matrices, metrics and pairwise ROC-AUC",
+    "intentional test-group contamination rejected before fit"
+  ],
+  "errors": [],
+  "no_models_retrained": true
+}

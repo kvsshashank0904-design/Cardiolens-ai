@@ -1,0 +1,148 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    "Source SHA-256 and every frozen prior output file match pre-run hashes",
+    "302 corrected UCI labels, missing-code evidence, raw feature hashes, 1025 row links and exact saved split/folds checked",
+    "Only max_iter changed from 2000 to 10000; all other default/explicit MLP parameters and fitted preprocessing match Experiment 4; optimizer status and loss checked",
+    "Six fits: exact training membership, zero validation/test group overlap, training-only preprocessing, fixed MLP settings and one test inference after CV; warning lists inspected separately",
+    "All three models: all five CV folds and test metrics independently recomputed by direct counts and pairwise AUC, including original-row expansion, denominators and differences",
+    "Saved model architecture, preprocessing and test probabilities independently checked with explicit matrix multiplication and sigmoid",
+    "Source and protected hashes rechecked at verification completion"
+  ],
+  "no_fitting_or_tuning_in_verifier": true,
+  "scope": "Recomputed saved metrics and manually evaluated the saved final model. Membership/statistic checks plus execution trace and fixed code support no train/validation/test leakage in this run; the holdout is previously inspected and not independent.",
+  "source_sha256": "ddb2996b2f4db2e00aad13f4518200179ff69f79093838e3c21ffa672ebec0f1",
+  "protected_files_unchanged": 85,
+  "all_five_cv_folds_converged": true,
+  "optimizer_statuses": [
+    {
+      "phase": "cv_fit_1",
+      "success": true,
+      "status": 0,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 1205,
+      "nfev": 1284,
+      "njev": 1284,
+      "fun": 0.09587246602227799,
+      "gradient_max_abs": 0.005341380994679952,
+      "method": "L-BFGS-B",
+      "options": {
+        "maxfun": 50000,
+        "maxiter": 10000,
+        "gtol": 1e-05
+      }
+    },
+    {
+      "phase": "cv_fit_2",
+      "success": true,
+      "status": 0,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 3243,
+      "nfev": 3439,
+      "njev": 3439,
+      "fun": 0.10077392095739056,
+      "gradient_max_abs": 0.003986656945670972,
+      "method": "L-BFGS-B",
+      "options": {
+        "maxfun": 50000,
+        "maxiter": 10000,
+        "gtol": 1e-05
+      }
+    },
+    {
+      "phase": "cv_fit_3",
+      "success": true,
+      "status": 0,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 2634,
+      "nfev": 2778,
+      "njev": 2778,
+      "fun": 0.09633474147685048,
+      "gradient_max_abs": 0.004740825043263686,
+      "method": "L-BFGS-B",
+      "options": {
+        "maxfun": 50000,
+        "maxiter": 10000,
+        "gtol": 1e-05
+      }
+    },
+    {
+      "phase": "cv_fit_4",
+      "success": true,
+      "status": 0,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 1443,
+      "nfev": 1507,
+      "njev": 1507,
+      "fun": 0.09004843789027278,
+      "gradient_max_abs": 0.003667603658614229,
+      "method": "L-BFGS-B",
+      "options": {
+        "maxfun": 50000,
+        "maxiter": 10000,
+        "gtol": 1e-05
+      }
+    },
+    {
+      "phase": "cv_fit_5",
+      "success": true,
+      "status": 0,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 1225,
+      "nfev": 1298,
+      "njev": 1298,
+      "fun": 0.09657414661103064,
+      "gradient_max_abs": 0.005728410440670395,
+      "method": "L-BFGS-B",
+      "options": {
+        "maxfun": 50000,
+        "maxiter": 10000,
+        "gtol": 1e-05
+      }
+    },
+    {
+      "phase": "final_development_fit",
+      "success": true,
+      "status": 0,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 943,
+      "nfev": 1001,
+      "njev": 1001,
+      "fun": 0.08878423049690243,
+      "gradient_max_abs": 0.003943518786175413,
+      "method": "L-BFGS-B",
+      "options": {
+        "maxfun": 50000,
+        "maxiter": 10000,
+        "gtol": 1e-05
+      }
+    }
+  ],
+  "fit_warnings": [],
+  "convergence_check": {
+    "status": "PASS",
+    "fits_with_warnings": [],
+    "note": "Consult optimizer_statuses for termination success and stopping criterion. Any listed warning fits require review; an empty list means no fit warnings. Successful relative-loss termination does not imply gradient tolerance or global optimality. No retries or tuning were performed."
+  },
+  "new_artifact_sha256": {
+    "configuration.json": "e7d906ef0340a196a0fe9b12345ea041f65891c5be3f4d8e375517c3bd65ebbe",
+    "cv_predictions.csv": "a2c65731084c8f291a8257497154edd98b7cb24cd32122b0785b199157e14987",
+    "cv_row_predictions.csv": "8b3e9122417c8bbde985536bf364662a98e16d76f5a12fd50e8d47b854e3f6b6",
+    "environment.json": "c8b9c934f33055b6154339bd65590a3b586c7857bd4b832e1a8efc5550552ed2",
+    "execution.json": "85dd959f0a30c471b11a6b78be8877739d07e763c99c6d31b84629ee8a28a7b3",
+    "group_split_manifest.csv": "082ef2d5ba1ff63ba5172f4ee216135be4cfd45173e6c9306d6a1d0ef3ea2b20",
+    "mlp_convergence_config.json": "e7d906ef0340a196a0fe9b12345ea041f65891c5be3f4d8e375517c3bd65ebbe",
+    "mlp_convergence_metrics.json": "6020ceb667862409b79c80956e17a79412719c07cd9d18218aafdd1fffce48ed",
+    "mlp_convergence_report.md": "13fbe5408c80527753bf360dc4713f5d0bf2456430c608d711b454e906018bf6",
+    "mlp_model.joblib": "4d1ccc94d3b37a7b41174849c9b98a9f926564339d5e185d8a5784bac6dd1233",
+    "README.md": "0c84d231df889c39416eca459c7772f81abe78a21005faf6e2bdae434c1ae541",
+    "report_convergence.py": "4ef17575213e6dd403e0d7c08382af8254aafd27cfe4bd14226000f4315670ef",
+    "requirements.txt": "2a42ef38db2089a7485dd186d851558eafbe622e762fb12ea62040ee5f832bcd",
+    "run_mlp_convergence.py": "b07d3700bc0f5ccf7594c4207ba972f172508c7b8fd76864467940c5b1288a0a",
+    "run_status.json": "476b9b2ed39c6cabaf6579792b290d1e86b713315a52d494a3ed65b7e9940dfc",
+    "test_predictions.csv": "d87515c2adb246828428c814e2145b77909ee7ac7b4c3286fd5c36fb4760a92a",
+    "test_row_predictions.csv": "ab943395f7beeaaf802367db1611afafd7fa3574dae458da23c0dc17435a082a",
+    "verify_mlp_convergence.py": "1069b7852aa91952d0f5c11ecaba85d98192a0cb808496a9b3f104f54078bf32"
+  }
+}

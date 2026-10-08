@@ -1,0 +1,30 @@
+[
+  {
+    "file": "uci_cleveland.data",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/processed.cleveland.data",
+    "accessed_date": "2026-09-27",
+    "bytes": 18461,
+    "sha256": "a74b7efa387bc9d108d7d0115d831fe9b414b29ae7124f331b622b4efa0427c8"
+  },
+  {
+    "file": "uci_names.txt",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/heart-disease.names",
+    "accessed_date": "2026-09-27",
+    "bytes": 10060,
+    "sha256": "ec7ed5aa4ed8321097808f47b836301c2a0c36f3bb09c40b8b43b622363e6b61"
+  },
+  {
+    "file": "kaggle_view.json",
+    "url": "https://www.kaggle.com/api/v1/datasets/view/johnsmith88/heart-disease-dataset",
+    "accessed_date": "2026-09-27",
+    "bytes": 5598,
+    "sha256": "f8ff1179040bc981e45b8f1b7951daa492c45b53a9a4ecd560fcc187ebd9cc27"
+  },
+  {
+    "file": "kaggle_version2.zip",
+    "url": "https://www.kaggle.com/api/v1/datasets/download/johnsmith88/heart-disease-dataset?datasetVersionNumber=2",
+    "accessed_date": "2026-09-27",
+    "bytes": 6325,
+    "sha256": "44c9dee9d3072915a677a2d1f15ad6269ca0a1a9258ca9b100789f2e377e4974"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "python": "3.12.10",
+  "numpy": "2.3.3",
+  "scipy": "1.16.2",
+  "sklearn": "1.7.2",
+  "joblib": "1.5.2",
+  "config_sha256": "3063ff5fb4b189dc211596148fa6324d559134d286e4366af65f9c8d579c446e",
+  "runner_sha256": "34490fd5e973aa310754135d1d86d2f0258f4626713b7e357d3dba21212e528e",
+  "source_sha256": "ddb2996b2f4db2e00aad13f4518200179ff69f79093838e3c21ffa672ebec0f1",
+  "primary_helper_sha256": "d1db919310d4e86e99e1a673b3b51153b36648d128cffca332e3f49666bc46f3"
+}

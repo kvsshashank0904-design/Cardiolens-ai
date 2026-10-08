@@ -1,0 +1,116 @@
+{
+  "artifact_relative_path": "outputs/corrected_label_baseline/explicit_missing_model.joblib",
+  "artifact_sha256": "d5cc8dede683857a725976f578f08f81740e9d975ecc38efa5826a15f93d7344",
+  "experiment_config_sha256": "3063ff5fb4b189dc211596148fa6324d559134d286e4366af65f9c8d579c446e",
+  "features": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "numeric_features": [
+    "age",
+    "trestbps",
+    "chol",
+    "thalach",
+    "oldpeak"
+  ],
+  "categorical_features": [
+    "sex",
+    "cp",
+    "fbs",
+    "restecg",
+    "exang",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "numeric_supported_ranges": {
+    "age": [
+      29.0,
+      77.0
+    ],
+    "trestbps": [
+      94.0,
+      200.0
+    ],
+    "chol": [
+      126.0,
+      564.0
+    ],
+    "thalach": [
+      71.0,
+      202.0
+    ],
+    "oldpeak": [
+      0.0,
+      6.2
+    ]
+  },
+  "categorical_codes": {
+    "sex": [
+      0,
+      1
+    ],
+    "cp": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fbs": [
+      0,
+      1
+    ],
+    "restecg": [
+      0,
+      1,
+      2
+    ],
+    "exang": [
+      0,
+      1
+    ],
+    "slope": [
+      0,
+      1,
+      2
+    ],
+    "ca": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "thal": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "threshold": 0.5,
+  "missing_codes": {
+    "ca": 4,
+    "thal": 0
+  },
+  "positive_class": 1,
+  "label_definition": "disease_present = 1 - original_target = int(matched UCI num > 0)",
+  "runtime_versions": {
+    "numpy": "2.3.3",
+    "scipy": "1.16.2",
+    "scikit-learn": "1.7.2",
+    "joblib": "1.5.2",
+    "threadpoolctl": "3.6.0"
+  }
+}

@@ -1,0 +1,448 @@
+{
+  "primary_cv_derived_from_saved_predictions": [
+    {
+      "fold": 1,
+      "distinct_group": {
+        "n": 49,
+        "class_counts": {
+          "0": 22,
+          "1": 27
+        },
+        "confusion_matrix": [
+          [
+            21,
+            1
+          ],
+          [
+            4,
+            23
+          ]
+        ],
+        "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+        "sensitivity": 0.8518518518518519,
+        "specificity": 0.9545454545454546,
+        "precision": 0.9583333333333334,
+        "f1": 0.9019607843137255,
+        "accuracy": 0.8979591836734694,
+        "roc_auc": 0.9545454545454546,
+        "denominators": {
+          "sensitivity": 27,
+          "specificity": 22,
+          "precision": 24,
+          "f1": 51,
+          "accuracy": 49,
+          "roc_auc_positive_negative_pairs": 594
+        },
+        "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+      },
+      "original_row_weighted": {
+        "n": 165,
+        "class_counts": {
+          "0": 82,
+          "1": 83
+        },
+        "confusion_matrix": [
+          [
+            79,
+            3
+          ],
+          [
+            12,
+            71
+          ]
+        ],
+        "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+        "sensitivity": 0.8554216867469879,
+        "specificity": 0.9634146341463414,
+        "precision": 0.9594594594594594,
+        "f1": 0.9044585987261147,
+        "accuracy": 0.9090909090909091,
+        "roc_auc": 0.9585659712018807,
+        "denominators": {
+          "sensitivity": 83,
+          "specificity": 82,
+          "precision": 74,
+          "f1": 157,
+          "accuracy": 165,
+          "roc_auc_positive_negative_pairs": 6806
+        },
+        "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+      }
+    },
+    {
+      "fold": 2,
+      "distinct_group": {
+        "n": 48,
+        "class_counts": {
+          "0": 22,
+          "1": 26
+        },
+        "confusion_matrix": [
+          [
+            21,
+            1
+          ],
+          [
+            3,
+            23
+          ]
+        ],
+        "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+        "sensitivity": 0.8846153846153846,
+        "specificity": 0.9545454545454546,
+        "precision": 0.9583333333333334,
+        "f1": 0.92,
+        "accuracy": 0.9166666666666666,
+        "roc_auc": 0.965034965034965,
+        "denominators": {
+          "sensitivity": 26,
+          "specificity": 22,
+          "precision": 24,
+          "f1": 50,
+          "accuracy": 48,
+          "roc_auc_positive_negative_pairs": 572
+        },
+        "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+      },
+      "original_row_weighted": {
+        "n": 164,
+        "class_counts": {
+          "0": 80,
+          "1": 84
+        },
+        "confusion_matrix": [
+          [
+            77,
+            3
+          ],
+          [
+            9,
+            75
+          ]
+        ],
+        "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+        "sensitivity": 0.8928571428571429,
+        "specificity": 0.9625,
+        "precision": 0.9615384615384616,
+        "f1": 0.9259259259259259,
+        "accuracy": 0.926829268292683,
+        "roc_auc": 0.9700892857142855,
+        "denominators": {
+          "sensitivity": 84,
+          "specificity": 80,
+          "precision": 78,
+          "f1": 162,
+          "accuracy": 164,
+          "roc_auc_positive_negative_pairs": 6720
+        },
+        "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+      }
+    },
+    {
+      "fold": 3,
+      "distinct_group": {
+        "n": 48,
+        "class_counts": {
+          "0": 22,
+          "1": 26
+        },
+        "confusion_matrix": [
+          [
+            18,
+            4
+          ],
+          [
+            1,
+            25
+          ]
+        ],
+        "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+        "sensitivity": 0.9615384615384616,
+        "specificity": 0.8181818181818182,
+        "precision": 0.8620689655172413,
+        "f1": 0.9090909090909091,
+        "accuracy": 0.8958333333333334,
+        "roc_auc": 0.965034965034965,
+        "denominators": {
+          "sensitivity": 26,
+          "specificity": 22,
+          "precision": 29,
+          "f1": 55,
+          "accuracy": 48,
+          "roc_auc_positive_negative_pairs": 572
+        },
+        "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+      },
+      "original_row_weighted": {
+        "n": 164,
+        "class_counts": {
+          "0": 76,
+          "1": 88
+        },
+        "confusion_matrix": [
+          [
+            63,
+            13
+          ],
+          [
+            4,
+            84
+          ]
+        ],
+        "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+        "sensitivity": 0.9545454545454546,
+        "specificity": 0.8289473684210527,
+        "precision": 0.865979381443299,
+        "f1": 0.9081081081081082,
+        "accuracy": 0.8963414634146342,
+        "roc_auc": 0.9651614832535885,
+        "denominators": {
+          "sensitivity": 88,
+          "specificity": 76,
+          "precision": 97,
+          "f1": 185,
+          "accuracy": 164,
+          "roc_auc_positive_negative_pairs": 6688
+        },
+        "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+      }
+    },
+    {
+      "fold": 4,
+      "distinct_group": {
+        "n": 48,
+        "class_counts": {
+          "0": 22,
+          "1": 26
+        },
+        "confusion_matrix": [
+          [
+            16,
+            6
+          ],
+          [
+            1,
+            25
+          ]
+        ],
+        "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+        "sensitivity": 0.9615384615384616,
+        "specificity": 0.7272727272727273,
+        "precision": 0.8064516129032258,
+        "f1": 0.8771929824561403,
+        "accuracy": 0.8541666666666666,
+        "roc_auc": 0.937062937062937,
+        "denominators": {
+          "sensitivity": 26,
+          "specificity": 22,
+          "precision": 31,
+          "f1": 57,
+          "accuracy": 48,
+          "roc_auc_positive_negative_pairs": 572
+        },
+        "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+      },
+      "original_row_weighted": {
+        "n": 159,
+        "class_counts": {
+          "0": 79,
+          "1": 80
+        },
+        "confusion_matrix": [
+          [
+            55,
+            24
+          ],
+          [
+            3,
+            77
+          ]
+        ],
+        "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+        "sensitivity": 0.9625,
+        "specificity": 0.6962025316455697,
+        "precision": 0.7623762376237624,
+        "f1": 0.850828729281768,
+        "accuracy": 0.8301886792452831,
+        "roc_auc": 0.9319620253164557,
+        "denominators": {
+          "sensitivity": 80,
+          "specificity": 79,
+          "precision": 101,
+          "f1": 181,
+          "accuracy": 159,
+          "roc_auc_positive_negative_pairs": 6320
+        },
+        "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+      }
+    },
+    {
+      "fold": 5,
+      "distinct_group": {
+        "n": 48,
+        "class_counts": {
+          "0": 22,
+          "1": 26
+        },
+        "confusion_matrix": [
+          [
+            18,
+            4
+          ],
+          [
+            6,
+            20
+          ]
+        ],
+        "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+        "sensitivity": 0.7692307692307693,
+        "specificity": 0.8181818181818182,
+        "precision": 0.8333333333333334,
+        "f1": 0.8,
+        "accuracy": 0.7916666666666666,
+        "roc_auc": 0.9020979020979021,
+        "denominators": {
+          "sensitivity": 26,
+          "specificity": 22,
+          "precision": 24,
+          "f1": 50,
+          "accuracy": 48,
+          "roc_auc_positive_negative_pairs": 572
+        },
+        "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+      },
+      "original_row_weighted": {
+        "n": 159,
+        "class_counts": {
+          "0": 78,
+          "1": 81
+        },
+        "confusion_matrix": [
+          [
+            64,
+            14
+          ],
+          [
+            18,
+            63
+          ]
+        ],
+        "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+        "sensitivity": 0.7777777777777778,
+        "specificity": 0.8205128205128205,
+        "precision": 0.8181818181818182,
+        "f1": 0.7974683544303798,
+        "accuracy": 0.7987421383647799,
+        "roc_auc": 0.9023425134536245,
+        "denominators": {
+          "sensitivity": 81,
+          "specificity": 78,
+          "precision": 77,
+          "f1": 158,
+          "accuracy": 159,
+          "roc_auc_positive_negative_pairs": 6318
+        },
+        "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+      }
+    }
+  ],
+  "primary_cv_summary": {
+    "distinct_group": {
+      "mean_roc_auc": 0.9447552447552446,
+      "sample_sd_roc_auc": 0.026444294267397257
+    },
+    "original_row_weighted": {
+      "mean_roc_auc": 0.9456242557879669,
+      "sample_sd_roc_auc": 0.02831825694294645
+    }
+  },
+  "repetition_weighted_cv_summary": {
+    "distinct_group": {
+      "mean_roc_auc": 0.9426573426573427,
+      "sample_sd_roc_auc": 0.029080947393369215
+    },
+    "original_row_weighted": {
+      "mean_roc_auc": 0.943218322909192,
+      "sample_sd_roc_auc": 0.031078985885573944
+    }
+  },
+  "test_differences": {
+    "distinct_group": {
+      "roc_auc": {
+        "primary": 0.8409090909090909,
+        "repetition_weighted": 0.8398268398268399,
+        "signed_difference": -0.0010822510822510178,
+        "absolute_difference": 0.0010822510822510178
+      },
+      "sensitivity": {
+        "primary": 0.8787878787878788,
+        "repetition_weighted": 0.8484848484848485,
+        "signed_difference": -0.030303030303030276,
+        "absolute_difference": 0.030303030303030276
+      },
+      "specificity": {
+        "primary": 0.6428571428571429,
+        "repetition_weighted": 0.6428571428571429,
+        "signed_difference": 0.0,
+        "absolute_difference": 0.0
+      },
+      "precision": {
+        "primary": 0.7435897435897436,
+        "repetition_weighted": 0.7368421052631579,
+        "signed_difference": -0.006747638326585759,
+        "absolute_difference": 0.006747638326585759
+      },
+      "f1": {
+        "primary": 0.8055555555555556,
+        "repetition_weighted": 0.7887323943661971,
+        "signed_difference": -0.01682316118935845,
+        "absolute_difference": 0.01682316118935845
+      },
+      "accuracy": {
+        "primary": 0.7704918032786885,
+        "repetition_weighted": 0.7540983606557377,
+        "signed_difference": -0.016393442622950838,
+        "absolute_difference": 0.016393442622950838
+      }
+    },
+    "original_row_weighted": {
+      "roc_auc": {
+        "primary": 0.8381118881118882,
+        "repetition_weighted": 0.8373251748251748,
+        "signed_difference": -0.0007867132867134252,
+        "absolute_difference": 0.0007867132867134252
+      },
+      "sensitivity": {
+        "primary": 0.8727272727272727,
+        "repetition_weighted": 0.8454545454545455,
+        "signed_difference": -0.027272727272727226,
+        "absolute_difference": 0.027272727272727226
+      },
+      "specificity": {
+        "primary": 0.6346153846153846,
+        "repetition_weighted": 0.6346153846153846,
+        "signed_difference": 0.0,
+        "absolute_difference": 0.0
+      },
+      "precision": {
+        "primary": 0.7164179104477612,
+        "repetition_weighted": 0.7099236641221374,
+        "signed_difference": -0.006494246325623787,
+        "absolute_difference": 0.006494246325623787
+      },
+      "f1": {
+        "primary": 0.7868852459016393,
+        "repetition_weighted": 0.7717842323651453,
+        "signed_difference": -0.015101013536494068,
+        "absolute_difference": 0.015101013536494068
+      },
+      "accuracy": {
+        "primary": 0.7570093457943925,
+        "repetition_weighted": 0.7429906542056075,
+        "signed_difference": -0.014018691588784993,
+        "absolute_difference": 0.014018691588784993
+      }
+    }
+  },
+  "same_test_groups": true
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "fits": 6,
+  "test_prediction_calls": 1,
+  "warnings": [],
+  "protected_files_unchanged": 85,
+  "source_sha256": "ddb2996b2f4db2e00aad13f4518200179ff69f79093838e3c21ffa672ebec0f1"
+}

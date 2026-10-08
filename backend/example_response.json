@@ -1,0 +1,142 @@
+{
+  "prediction": 0,
+  "prediction_label": "Model prediction: disease absence",
+  "model_probability": 0.280577852895315,
+  "probability_definition": "Estimated model probability for disease_present=1; not medically validated.",
+  "model": {
+    "name": "Logistic Regression",
+    "experiment": "Experiment 3",
+    "preprocessing": "primary_explicit_missing",
+    "threshold": 0.5
+  },
+  "explanation": {
+    "method": "Additive logistic-regression contributions in log-odds units",
+    "intercept": 0.03331748577581705,
+    "log_odds": -0.9415970794281918,
+    "feature_contributions": [
+      {
+        "feature": "numeric__age",
+        "contribution": 0.06936576434003684
+      },
+      {
+        "feature": "numeric__trestbps",
+        "contribution": 0.19821674660398098
+      },
+      {
+        "feature": "numeric__chol",
+        "contribution": 0.060533614304082224
+      },
+      {
+        "feature": "numeric__thalach",
+        "contribution": -0.7027896912018768
+      },
+      {
+        "feature": "numeric__oldpeak",
+        "contribution": -0.38066552329448167
+      },
+      {
+        "feature": "categorical__sex_0.0",
+        "contribution": -0.0
+      },
+      {
+        "feature": "categorical__sex_1.0",
+        "contribution": 0.6200488388159394
+      },
+      {
+        "feature": "categorical__cp_0.0",
+        "contribution": 1.2856382900610805
+      },
+      {
+        "feature": "categorical__cp_1.0",
+        "contribution": 0.0
+      },
+      {
+        "feature": "categorical__cp_2.0",
+        "contribution": -0.0
+      },
+      {
+        "feature": "categorical__cp_3.0",
+        "contribution": -0.0
+      },
+      {
+        "feature": "categorical__fbs_0.0",
+        "contribution": 0.20308323223806765
+      },
+      {
+        "feature": "categorical__fbs_1.0",
+        "contribution": -0.0
+      },
+      {
+        "feature": "categorical__restecg_0.0",
+        "contribution": 0.28077624040054566
+      },
+      {
+        "feature": "categorical__restecg_1.0",
+        "contribution": -0.0
+      },
+      {
+        "feature": "categorical__restecg_2.0",
+        "contribution": 0.0
+      },
+      {
+        "feature": "categorical__exang_0.0",
+        "contribution": -0.0
+      },
+      {
+        "feature": "categorical__exang_1.0",
+        "contribution": 0.4814306885577877
+      },
+      {
+        "feature": "categorical__slope_0.0",
+        "contribution": -0.0
+      },
+      {
+        "feature": "categorical__slope_1.0",
+        "contribution": 0.0
+      },
+      {
+        "feature": "categorical__slope_2.0",
+        "contribution": -0.5102783548430859
+      },
+      {
+        "feature": "categorical__ca_-1.0",
+        "contribution": -0.0
+      },
+      {
+        "feature": "categorical__ca_0.0",
+        "contribution": -1.7905676496860998
+      },
+      {
+        "feature": "categorical__ca_1.0",
+        "contribution": 0.0
+      },
+      {
+        "feature": "categorical__ca_2.0",
+        "contribution": 0.0
+      },
+      {
+        "feature": "categorical__ca_3.0",
+        "contribution": 0.0
+      },
+      {
+        "feature": "categorical__thal_-1.0",
+        "contribution": 0.0
+      },
+      {
+        "feature": "categorical__thal_1.0",
+        "contribution": -0.0
+      },
+      {
+        "feature": "categorical__thal_2.0",
+        "contribution": -0.7897067614999858
+      },
+      {
+        "feature": "categorical__thal_3.0",
+        "contribution": 0.0
+      }
+    ],
+    "interpretation": "Contributions sum with the intercept to model log-odds for class 1. Positive values increase that model score; these are not medical causes or probabilities."
+  },
+  "missing_features": [],
+  "disclaimer": "This is a research prototype and is not a medical diagnosis."
+}

@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    "31 backend tests pass, including 61 saved Experiment 3 prediction parity cases",
+    "Training/refit methods patched to fail during startup and requests; no calls occurred",
+    "One joblib load per application lifespan; in-memory pipeline hash unchanged across predictions",
+    "Feature order, explicit sentinel decoding, deterministic responses and log-odds explanation arithmetic verified",
+    "Strict numeric/category validation, malformed payloads, loading failures and sanitized inference errors checked",
+    "Actual Uvicorn loopback HTTP: health, model-info and deterministic predict pass",
+    "Original CSV and all 104 pre-existing output files unchanged before and after verification"
+  ],
+  "source_sha256": "ddb2996b2f4db2e00aad13f4518200179ff69f79093838e3c21ffa672ebec0f1",
+  "protected_files_unchanged": 104,
+  "pytest": {
+    "tests": 31,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "live_uvicorn": {
+    "health": {
+      "status": "ok",
+      "service": "CardioLens AI",
+      "model_loaded": true
+    },
+    "model_info_experiment": "Experiment 3",
+    "prediction": 0,
+    "model_probability": 0.280577852895315,
+    "deterministic": true,
+    "server_stopped_after_check": true
+  },
+  "warnings": [
+    "Installed Starlette TestClient emits an httpx deprecation warning; all tests pass. This does not occur in model inference."
+  ],
+  "backend_source_sha256": {
+    "verify_backend.py": "51d176b5dda10b3d4e6900d1fd3e35e7c2b51ea0268e94f4b449f2a938addcae",
+    "__init__.py": "0cde7d218e486d42117bb18011c321311abc124801e596b6ab8d831da1766057",
+    "app/config.py": "f1a4249e9206a75e3329de1ba60616fad89127c572e54920f871933b7ebc71ea",
+    "app/main.py": "73450bc0c6515d8a1a1ceab1dc451b0268f996888d9b29767f16d3af0b695a60",
+    "app/model_service.py": "1b1663234c8b227670ad16861507e922bb87e7cd7b214fdb02df420896643e69",
+    "app/schemas.py": "9f9746f0ad481029693bec6cba2d51dfd2ef90e22b0a238ecf368fb8ce0ae500",
+    "app/__init__.py": "941fe66d1c5c20cab502030ef37b24af6aa17c77c8f08fd464fbf4cf0b8d1da2",
+    "tests/conftest.py": "ca64ec8120f444d0bb2e66d4af4eedd989f07f3a805b319b4fe4459eb6b31447",
+    "tests/test_health.py": "54a3e3f1ee6439842b885ffc7702e12bebb0f5a50157237b28f95e308127107b",
+    "tests/test_model_loading.py": "65b0e6ba2c7b3bcaa09a6ca4b5c046809967c4c4768ddfa990119ee8191e04c7",
+    "tests/test_prediction.py": "ae9ce41ed6dc8b32a0576347cf31553ed8bd292ffc8a8b96eed046761933f767",
+    "app/routes/health.py": "e76f6d4277de3e058a9cb1222adce8a335e32b57fce6b64173b1f2ca1d09b878",
+    "app/routes/prediction.py": "fd687abd5e3fcc794085ccf3096afed528ecc72f7fdc1cd6d24bf38699b49aac",
+    "app/routes/__init__.py": "07f20c43e1d16556b3d97e8ea2785d5f592c12d222db13a6b4103b0ec9b7c255"
+  }
+}

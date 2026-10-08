@@ -1,0 +1,695 @@
+{
+  "counts": {
+    "all": {
+      "group_count": 302,
+      "original_row_count": 1025,
+      "group_class_counts": {
+        "0": 164,
+        "1": 138
+      },
+      "row_class_counts": {
+        "0": 526,
+        "1": 499
+      }
+    },
+    "development": {
+      "group_count": 241,
+      "original_row_count": 811,
+      "group_class_counts": {
+        "0": 131,
+        "1": 110
+      },
+      "row_class_counts": {
+        "0": 416,
+        "1": 395
+      }
+    },
+    "test": {
+      "group_count": 61,
+      "original_row_count": 214,
+      "group_class_counts": {
+        "0": 33,
+        "1": 28
+      },
+      "row_class_counts": {
+        "0": 110,
+        "1": 104
+      }
+    }
+  },
+  "repeated_copies": 723,
+  "missing_groups": {
+    "ca": 4,
+    "thal": 2
+  },
+  "lr_test": {
+    "distinct_group": {
+      "n": 61,
+      "class_counts": {
+        "0": 33,
+        "1": 28
+      },
+      "confusion_matrix": [
+        [
+          29,
+          4
+        ],
+        [
+          10,
+          18
+        ]
+      ],
+      "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+      "sensitivity": 0.6428571428571429,
+      "specificity": 0.8787878787878788,
+      "precision": 0.8181818181818182,
+      "f1": 0.72,
+      "accuracy": 0.7704918032786885,
+      "roc_auc": 0.8409090909090909,
+      "denominators": {
+        "sensitivity": 28,
+        "specificity": 33,
+        "precision": 22,
+        "f1": 50,
+        "accuracy": 61,
+        "roc_auc_positive_negative_pairs": 924
+      },
+      "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+    },
+    "original_row_weighted": {
+      "n": 214,
+      "class_counts": {
+        "0": 110,
+        "1": 104
+      },
+      "confusion_matrix": [
+        [
+          96,
+          14
+        ],
+        [
+          38,
+          66
+        ]
+      ],
+      "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+      "sensitivity": 0.6346153846153846,
+      "specificity": 0.8727272727272727,
+      "precision": 0.825,
+      "f1": 0.717391304347826,
+      "accuracy": 0.7570093457943925,
+      "roc_auc": 0.8381118881118881,
+      "denominators": {
+        "sensitivity": 104,
+        "specificity": 110,
+        "precision": 80,
+        "f1": 184,
+        "accuracy": 214,
+        "roc_auc_positive_negative_pairs": 11440
+      },
+      "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+    }
+  },
+  "lr_cv": {
+    "sensitivity": {
+      "mean": 0.8545454545454546,
+      "sd": 0.09854310631217636
+    },
+    "specificity": {
+      "mean": 0.8857549857549858,
+      "sd": 0.08095505638847246
+    },
+    "precision": {
+      "mean": 0.8707089783281734,
+      "sd": 0.08120106109255301
+    },
+    "f1": {
+      "mean": 0.8575661592380529,
+      "sd": 0.05428744470606759
+    },
+    "accuracy": {
+      "mean": 0.8712585034013606,
+      "sd": 0.05001435104566255
+    },
+    "roc_auc": {
+      "mean": 0.9447552447552447,
+      "sd": 0.02644429426739725
+    }
+  },
+  "roc_points": [
+    [
+      0,
+      0
+    ],
+    [
+      0.0,
+      0.03571428571428571
+    ],
+    [
+      0.0,
+      0.07142857142857142
+    ],
+    [
+      0.0,
+      0.10714285714285714
+    ],
+    [
+      0.0,
+      0.14285714285714285
+    ],
+    [
+      0.0,
+      0.17857142857142858
+    ],
+    [
+      0.0,
+      0.21428571428571427
+    ],
+    [
+      0.030303030303030304,
+      0.21428571428571427
+    ],
+    [
+      0.030303030303030304,
+      0.25
+    ],
+    [
+      0.030303030303030304,
+      0.2857142857142857
+    ],
+    [
+      0.030303030303030304,
+      0.32142857142857145
+    ],
+    [
+      0.030303030303030304,
+      0.35714285714285715
+    ],
+    [
+      0.030303030303030304,
+      0.39285714285714285
+    ],
+    [
+      0.030303030303030304,
+      0.42857142857142855
+    ],
+    [
+      0.030303030303030304,
+      0.4642857142857143
+    ],
+    [
+      0.030303030303030304,
+      0.5
+    ],
+    [
+      0.030303030303030304,
+      0.5357142857142857
+    ],
+    [
+      0.06060606060606061,
+      0.5357142857142857
+    ],
+    [
+      0.06060606060606061,
+      0.5714285714285714
+    ],
+    [
+      0.09090909090909091,
+      0.5714285714285714
+    ],
+    [
+      0.09090909090909091,
+      0.6071428571428571
+    ],
+    [
+      0.09090909090909091,
+      0.6428571428571429
+    ],
+    [
+      0.12121212121212122,
+      0.6428571428571429
+    ],
+    [
+      0.15151515151515152,
+      0.6428571428571429
+    ],
+    [
+      0.15151515151515152,
+      0.6785714285714286
+    ],
+    [
+      0.18181818181818182,
+      0.6785714285714286
+    ],
+    [
+      0.21212121212121213,
+      0.6785714285714286
+    ],
+    [
+      0.21212121212121213,
+      0.7142857142857143
+    ],
+    [
+      0.24242424242424243,
+      0.7142857142857143
+    ],
+    [
+      0.24242424242424243,
+      0.75
+    ],
+    [
+      0.2727272727272727,
+      0.75
+    ],
+    [
+      0.2727272727272727,
+      0.7857142857142857
+    ],
+    [
+      0.30303030303030304,
+      0.7857142857142857
+    ],
+    [
+      0.30303030303030304,
+      0.8214285714285714
+    ],
+    [
+      0.30303030303030304,
+      0.8571428571428571
+    ],
+    [
+      0.3333333333333333,
+      0.8571428571428571
+    ],
+    [
+      0.3333333333333333,
+      0.8928571428571429
+    ],
+    [
+      0.36363636363636365,
+      0.8928571428571429
+    ],
+    [
+      0.36363636363636365,
+      0.9285714285714286
+    ],
+    [
+      0.3939393939393939,
+      0.9285714285714286
+    ],
+    [
+      0.42424242424242425,
+      0.9285714285714286
+    ],
+    [
+      0.45454545454545453,
+      0.9285714285714286
+    ],
+    [
+      0.48484848484848486,
+      0.9285714285714286
+    ],
+    [
+      0.5151515151515151,
+      0.9285714285714286
+    ],
+    [
+      0.5454545454545454,
+      0.9285714285714286
+    ],
+    [
+      0.5757575757575758,
+      0.9285714285714286
+    ],
+    [
+      0.6060606060606061,
+      0.9285714285714286
+    ],
+    [
+      0.6363636363636364,
+      0.9285714285714286
+    ],
+    [
+      0.6666666666666666,
+      0.9285714285714286
+    ],
+    [
+      0.696969696969697,
+      0.9285714285714286
+    ],
+    [
+      0.7272727272727273,
+      0.9285714285714286
+    ],
+    [
+      0.7575757575757576,
+      0.9285714285714286
+    ],
+    [
+      0.7878787878787878,
+      0.9285714285714286
+    ],
+    [
+      0.8181818181818182,
+      0.9285714285714286
+    ],
+    [
+      0.8484848484848485,
+      0.9285714285714286
+    ],
+    [
+      0.8484848484848485,
+      0.9642857142857143
+    ],
+    [
+      0.8787878787878788,
+      0.9642857142857143
+    ],
+    [
+      0.9090909090909091,
+      0.9642857142857143
+    ],
+    [
+      0.9090909090909091,
+      1.0
+    ],
+    [
+      0.9393939393939394,
+      1.0
+    ],
+    [
+      0.9696969696969697,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ]
+  ],
+  "runs": [
+    {
+      "id": "Exp 3",
+      "model": "Logistic regression",
+      "cv": {
+        "sensitivity": {
+          "mean": 0.8545454545454546,
+          "sd": 0.09854310631217636
+        },
+        "specificity": {
+          "mean": 0.8857549857549858,
+          "sd": 0.08095505638847246
+        },
+        "precision": {
+          "mean": 0.8707089783281734,
+          "sd": 0.08120106109255301
+        },
+        "f1": {
+          "mean": 0.8575661592380529,
+          "sd": 0.05428744470606759
+        },
+        "accuracy": {
+          "mean": 0.8712585034013606,
+          "sd": 0.05001435104566255
+        },
+        "roc_auc": {
+          "mean": 0.9447552447552447,
+          "sd": 0.02644429426739725
+        }
+      },
+      "test": {
+        "distinct_group": {
+          "n": 61,
+          "class_counts": {
+            "0": 33,
+            "1": 28
+          },
+          "confusion_matrix": [
+            [
+              29,
+              4
+            ],
+            [
+              10,
+              18
+            ]
+          ],
+          "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+          "sensitivity": 0.6428571428571429,
+          "specificity": 0.8787878787878788,
+          "precision": 0.8181818181818182,
+          "f1": 0.72,
+          "accuracy": 0.7704918032786885,
+          "roc_auc": 0.8409090909090909,
+          "denominators": {
+            "sensitivity": 28,
+            "specificity": 33,
+            "precision": 22,
+            "f1": 50,
+            "accuracy": 61,
+            "roc_auc_positive_negative_pairs": 924
+          },
+          "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+        },
+        "original_row_weighted": {
+          "n": 214,
+          "class_counts": {
+            "0": 110,
+            "1": 104
+          },
+          "confusion_matrix": [
+            [
+              96,
+              14
+            ],
+            [
+              38,
+              66
+            ]
+          ],
+          "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+          "sensitivity": 0.6346153846153846,
+          "specificity": 0.8727272727272727,
+          "precision": 0.825,
+          "f1": 0.717391304347826,
+          "accuracy": 0.7570093457943925,
+          "roc_auc": 0.8381118881118881,
+          "denominators": {
+            "sensitivity": 104,
+            "specificity": 110,
+            "precision": 80,
+            "f1": 184,
+            "accuracy": 214,
+            "roc_auc_positive_negative_pairs": 11440
+          },
+          "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+        }
+      },
+      "status": "Frozen baseline"
+    },
+    {
+      "id": "Exp 4",
+      "model": "MLP (2,000 iterations)",
+      "cv": {
+        "sensitivity": {
+          "mean": 0.8090909090909091,
+          "sd": 0.10365231137264891
+        },
+        "specificity": {
+          "mean": 0.8094017094017094,
+          "sd": 0.07594342950745119
+        },
+        "precision": {
+          "mean": 0.7884648902295961,
+          "sd": 0.05717324221920856
+        },
+        "f1": {
+          "mean": 0.7926808181466567,
+          "sd": 0.030863671170625117
+        },
+        "accuracy": {
+          "mean": 0.8090136054421768,
+          "sd": 0.018672179893025852
+        },
+        "roc_auc": {
+          "mean": 0.9038461538461539,
+          "sd": 0.019856322887413513
+        }
+      },
+      "test": {
+        "distinct_group": {
+          "n": 61,
+          "class_counts": {
+            "0": 33,
+            "1": 28
+          },
+          "confusion_matrix": [
+            [
+              27,
+              6
+            ],
+            [
+              8,
+              20
+            ]
+          ],
+          "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+          "sensitivity": 0.7142857142857143,
+          "specificity": 0.8181818181818182,
+          "precision": 0.7692307692307693,
+          "f1": 0.7407407407407407,
+          "accuracy": 0.7704918032786885,
+          "roc_auc": 0.8170995670995672,
+          "denominators": {
+            "sensitivity": 28,
+            "specificity": 33,
+            "precision": 26,
+            "f1": 54,
+            "accuracy": 61,
+            "roc_auc_positive_negative_pairs": 924
+          },
+          "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+        },
+        "original_row_weighted": {
+          "n": 214,
+          "class_counts": {
+            "0": 110,
+            "1": 104
+          },
+          "confusion_matrix": [
+            [
+              90,
+              20
+            ],
+            [
+              31,
+              73
+            ]
+          ],
+          "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+          "sensitivity": 0.7019230769230769,
+          "specificity": 0.8181818181818182,
+          "precision": 0.7849462365591398,
+          "f1": 0.7411167512690355,
+          "accuracy": 0.7616822429906542,
+          "roc_auc": 0.8164335664335665,
+          "denominators": {
+            "sensitivity": 104,
+            "specificity": 110,
+            "precision": 93,
+            "f1": 197,
+            "accuracy": 214,
+            "roc_auc_positive_negative_pairs": 11440
+          },
+          "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+        }
+      },
+      "status": "2 CV warnings"
+    },
+    {
+      "id": "Exp 4B",
+      "model": "MLP (10,000 iterations)",
+      "cv": {
+        "sensitivity": {
+          "mean": 0.8090909090909091,
+          "sd": 0.10365231137264891
+        },
+        "specificity": {
+          "mean": 0.8170940170940171,
+          "sd": 0.0674618367886192
+        },
+        "precision": {
+          "mean": 0.7941628959276018,
+          "sd": 0.052452690886444366
+        },
+        "f1": {
+          "mean": 0.7960821786908744,
+          "sd": 0.034806342086438805
+        },
+        "accuracy": {
+          "mean": 0.8131802721088436,
+          "sd": 0.021720323834841855
+        },
+        "roc_auc": {
+          "mean": 0.9027972027972028,
+          "sd": 0.019802375859642136
+        }
+      },
+      "test": {
+        "distinct_group": {
+          "n": 61,
+          "class_counts": {
+            "0": 33,
+            "1": 28
+          },
+          "confusion_matrix": [
+            [
+              27,
+              6
+            ],
+            [
+              8,
+              20
+            ]
+          ],
+          "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+          "sensitivity": 0.7142857142857143,
+          "specificity": 0.8181818181818182,
+          "precision": 0.7692307692307693,
+          "f1": 0.7407407407407407,
+          "accuracy": 0.7704918032786885,
+          "roc_auc": 0.8170995670995672,
+          "denominators": {
+            "sensitivity": 28,
+            "specificity": 33,
+            "precision": 26,
+            "f1": 54,
+            "accuracy": 61,
+            "roc_auc_positive_negative_pairs": 924
+          },
+          "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+        },
+        "original_row_weighted": {
+          "n": 214,
+          "class_counts": {
+            "0": 110,
+            "1": 104
+          },
+          "confusion_matrix": [
+            [
+              90,
+              20
+            ],
+            [
+              31,
+              73
+            ]
+          ],
+          "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+          "sensitivity": 0.7019230769230769,
+          "specificity": 0.8181818181818182,
+          "precision": 0.7849462365591398,
+          "f1": 0.7411167512690355,
+          "accuracy": 0.7616822429906542,
+          "roc_auc": 0.8164335664335665,
+          "denominators": {
+            "sensitivity": 104,
+            "specificity": 110,
+            "precision": 93,
+            "f1": 197,
+            "accuracy": 214,
+            "roc_auc_positive_negative_pairs": 11440
+          },
+          "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+        }
+      },
+      "status": "5 folds converged"
+    }
+  ],
+  "sources": {
+    "outputs/corrected_label_baseline/corrected_label_metrics.json": "7ead4b0bd40cbb6e5ff03a12e6cace8a9ac4134f986ba1b65e5d5bc94a82e299",
+    "outputs/model_comparison/model_comparison_metrics.json": "c1f1a7e6484d1aba8a76e5753719071691b4afae23615db9756a21332a285db0",
+    "outputs/mlp_convergence_check/mlp_convergence_metrics.json": "6020ceb667862409b79c80956e17a79412719c07cd9d18218aafdd1fffce48ed",
+    "outputs/corrected_label_baseline/corrected_test_predictions.csv": "18e33ec1dd5f4723ac3c80347e7605f648f2b26dc9c4e457625c28d393f6748e",
+    "backend/model_contract.json": "16ff2c23a492b8100cbf94079b47196749d2a49708dc6ece6db32bb56fce732f"
+  }
+}

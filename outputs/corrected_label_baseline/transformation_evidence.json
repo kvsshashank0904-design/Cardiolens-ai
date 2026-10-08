@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "groups_checked": 302,
+  "source_rows_checked": 1025,
+  "mapping": "disease_present = int(UCI num>0) = 1-original_target",
+  "label_mapping_counts": {
+    "original_0_to_presence_1_groups": 138,
+    "original_1_to_absence_0_groups": 164
+  },
+  "missing_codes": {
+    "ca": 4,
+    "thal": 0
+  },
+  "evidence_sha256": "1c8728a9c361e75eec60601e1b6dd435121af8b2e41ed79326a07b29ddd7c92a",
+  "uci_sha256": "a74b7efa387bc9d108d7d0115d831fe9b414b29ae7124f331b622b4efa0427c8",
+  "ambiguous_matches": 0,
+  "derived_blank_ca": 18,
+  "derived_blank_thal": 7
+}

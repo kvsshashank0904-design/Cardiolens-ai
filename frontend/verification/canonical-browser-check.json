@@ -1,0 +1,74 @@
+[
+  {
+    "width": 1440,
+    "route": "/",
+    "title": "Interpretable cardiovascular ML workspace",
+    "horizontalOverflow": false
+  },
+  {
+    "width": 1440,
+    "route": "/assessment",
+    "title": "Input feature record",
+    "horizontalOverflow": false
+  },
+  {
+    "width": 1440,
+    "route": "/results",
+    "title": "Model output & attribution",
+    "horizontalOverflow": false
+  },
+  {
+    "width": 1440,
+    "route": "/model-lab",
+    "title": "Model configuration & evaluation",
+    "horizontalOverflow": false
+  },
+  {
+    "width": 1440,
+    "route": "/data-integrity",
+    "title": "Dataset quality & validation",
+    "horizontalOverflow": false
+  },
+  {
+    "width": 1440,
+    "route": "/about",
+    "title": "About CardioLens AI",
+    "horizontalOverflow": false
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "title": "Interpretable cardiovascular ML workspace",
+    "horizontalOverflow": false
+  },
+  {
+    "width": 390,
+    "route": "/assessment",
+    "title": "Input feature record",
+    "horizontalOverflow": false
+  },
+  {
+    "width": 390,
+    "route": "/results",
+    "title": "Model output & attribution",
+    "horizontalOverflow": false
+  },
+  {
+    "width": 390,
+    "route": "/model-lab",
+    "title": "Model configuration & evaluation",
+    "horizontalOverflow": false
+  },
+  {
+    "width": 390,
+    "route": "/data-integrity",
+    "title": "Dataset quality & validation",
+    "horizontalOverflow": false
+  },
+  {
+    "width": 390,
+    "route": "/about",
+    "title": "About CardioLens AI",
+    "horizontalOverflow": false
+  }
+]

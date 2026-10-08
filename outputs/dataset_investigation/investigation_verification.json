@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "protected_artifacts_checked": 39,
+  "source_sha256": "ddb2996b2f4db2e00aad13f4518200179ff69f79093838e3c21ffa672ebec0f1",
+  "kaggle_version_2_exact_byte_match": true,
+  "uci_unique_anchor_matches": 302,
+  "full_transformed_record_matches": 302,
+  "models_trained": 0,
+  "source_or_experiment_changes": false
+}

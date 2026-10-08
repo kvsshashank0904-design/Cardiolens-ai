@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "source_sha256": "ddb2996b2f4db2e00aad13f4518200179ff69f79093838e3c21ffa672ebec0f1",
+  "protected_files_unchanged": 49,
+  "mapping_groups_verified": 302,
+  "derived_rows_verified": 1025,
+  "ambiguous_matches": 0,
+  "checks": [
+    "Exact UCI mapping and source/evidence checksum validation",
+    "Original labels retained; corrected labels equal int(UCI num>0)",
+    "Only documented missing codes decoded; raw values and source lines retained",
+    "Exact saved group definitions, split and five folds reused",
+    "One representative per training group; no validation/test overlap",
+    "Training-only scaler, modal/constant imputer and one-hot category checks",
+    "Fixed missingness indicator columns; no sentinel codes treated as observed categories",
+    "Frozen logistic settings and threshold; no variant selection",
+    "Independent CV/test metrics, confusion matrices, denominators and pairwise ROC-AUC",
+    "Complete original-row expansion of identical group predictions",
+    "One test prediction call per prespecified variant; serialized pipeline checks",
+    "Original CSV and every prior output file unchanged"
+  ],
+  "no_training_or_prediction_in_verifier": true,
+  "scope": "Evidence checks inspect upstream labels for semantics; fitting uses development labels only. Execution traces show all CV precedes test predictions and no test-dependent settings. The holdout is previously inspected, not independent."
+}

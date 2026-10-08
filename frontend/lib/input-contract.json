@@ -1,0 +1,104 @@
+{
+  "features": [
+    "age",
+    "sex",
+    "cp",
+    "trestbps",
+    "chol",
+    "fbs",
+    "restecg",
+    "thalach",
+    "exang",
+    "oldpeak",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "numeric_features": [
+    "age",
+    "trestbps",
+    "chol",
+    "thalach",
+    "oldpeak"
+  ],
+  "categorical_features": [
+    "sex",
+    "cp",
+    "fbs",
+    "restecg",
+    "exang",
+    "slope",
+    "ca",
+    "thal"
+  ],
+  "numeric_supported_ranges": {
+    "age": [
+      29.0,
+      77.0
+    ],
+    "trestbps": [
+      94.0,
+      200.0
+    ],
+    "chol": [
+      126.0,
+      564.0
+    ],
+    "thalach": [
+      71.0,
+      202.0
+    ],
+    "oldpeak": [
+      0.0,
+      6.2
+    ]
+  },
+  "categorical_codes": {
+    "sex": [
+      0,
+      1
+    ],
+    "cp": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "fbs": [
+      0,
+      1
+    ],
+    "restecg": [
+      0,
+      1,
+      2
+    ],
+    "exang": [
+      0,
+      1
+    ],
+    "slope": [
+      0,
+      1,
+      2
+    ],
+    "ca": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "thal": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "threshold": 0.5,
+  "missing_codes": {
+    "ca": 4,
+    "thal": 0
+  }
+}

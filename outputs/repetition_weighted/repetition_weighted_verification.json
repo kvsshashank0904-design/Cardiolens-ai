@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "source_sha256": "ddb2996b2f4db2e00aad13f4518200179ff69f79093838e3c21ffa672ebec0f1",
+  "primary_files_checked": 23,
+  "source_and_primary_unchanged": true,
+  "checks": [
+    "Exact original row-to-feature-group mapping, physical lines and consistent labels",
+    "Exact saved partition/fold reuse; no split regenerated",
+    "Every eligible source row included once; all original multiplicities retained",
+    "Zero validation/test group overlap in each fit",
+    "Scaler mean/variance/count and encoder categories match expanded training rows only",
+    "Fixed logistic parameters, seed and threshold; six fits and no model selection",
+    "CV complete before final fit; exactly one test prediction call on distinct groups",
+    "Same held-out group IDs as primary; group predictions correctly expanded to original rows",
+    "Independent CV/test confusion matrices, denominators, metrics and pairwise ROC-AUC",
+    "Primary CV weighted view derived from saved predictions; comparison deltas checked",
+    "Serialized final pipeline matches final training trace"
+  ],
+  "scope": "Dataflow and execution trace show no test label/score passed to fitting or selection; labels are read for mapping integrity and final scoring. This is an exploratory shared holdout, not an independent test.",
+  "no_models_retrained_or_predictions_generated_by_verifier": true
+}

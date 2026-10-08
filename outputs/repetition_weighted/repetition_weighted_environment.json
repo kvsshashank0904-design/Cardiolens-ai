@@ -1,0 +1,12 @@
+{
+  "python": "3.12.10",
+  "numpy": "2.3.3",
+  "scipy": "1.16.2",
+  "scikit-learn": "1.7.2",
+  "joblib": "1.5.2",
+  "threadpoolctl": "3.6.0",
+  "runner_sha256": "1c91a0529507fd9b15ae0291f5ca83ea4d72fb18e2bcd819389b100107568f42",
+  "config_sha256": "260cd05b12836bd859c8d115dcc557b26e2063a8bf3d0779f07529dc593b7a5f",
+  "primary_helpers_sha256": "d1db919310d4e86e99e1a673b3b51153b36648d128cffca332e3f49666bc46f3",
+  "executable": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-27\\we-are-building-cardiolens-ai-an\\work\\baseline-env\\Scripts\\python.exe"
+}

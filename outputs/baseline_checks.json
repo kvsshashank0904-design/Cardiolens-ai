@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "source_sha256_before": "ddb2996b2f4db2e00aad13f4518200179ff69f79093838e3c21ffa672ebec0f1",
+  "source_sha256_after": "ddb2996b2f4db2e00aad13f4518200179ff69f79093838e3c21ffa672ebec0f1",
+  "source_unchanged": true,
+  "manifest_covers_every_source_record_once": true,
+  "consistent_label_per_group": true,
+  "numeric_and_raw_groupings_agree": true,
+  "development_test_group_overlap": 0,
+  "cv_pairwise_train_validation_test_overlap": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "each_development_group_validates_once_per_candidate": true,
+  "training_one_row_per_group": true,
+  "preprocessing_training_only_checked": true,
+  "test_excluded_from_selection_and_fitting": true,
+  "selection_frozen_before_test_prediction": true,
+  "selection_sha256": "4fb4f9addfd7544f567c553cc1af0f53d461a8e3ba4f08177882040adc469063",
+  "final_test_prediction_calls": 1,
+  "scope": "Runtime guards and saved fit/selection IDs verify this execution. Initial target-stratified allocation necessarily uses labels; no test score guides selection.",
+  "errors": []
+}

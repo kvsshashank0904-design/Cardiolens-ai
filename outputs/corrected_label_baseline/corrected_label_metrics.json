@@ -1,0 +1,1141 @@
+{
+  "positive_class": "disease_present=1 means matched UCI num in 1..4; 0 means UCI num=0",
+  "primary_variant": "explicit_missing",
+  "model": "logistic_regression",
+  "threshold": 0.5,
+  "previously_inspected_holdout": true,
+  "counts": {
+    "all": {
+      "group_count": 302,
+      "original_row_count": 1025,
+      "group_class_counts": {
+        "0": 164,
+        "1": 138
+      },
+      "row_class_counts": {
+        "0": 526,
+        "1": 499
+      }
+    },
+    "development": {
+      "group_count": 241,
+      "original_row_count": 811,
+      "group_class_counts": {
+        "0": 131,
+        "1": 110
+      },
+      "row_class_counts": {
+        "0": 416,
+        "1": 395
+      }
+    },
+    "test": {
+      "group_count": 61,
+      "original_row_count": 214,
+      "group_class_counts": {
+        "0": 33,
+        "1": 28
+      },
+      "row_class_counts": {
+        "0": 110,
+        "1": 104
+      }
+    }
+  },
+  "variants": {
+    "explicit_missing": {
+      "cv_folds": [
+        {
+          "fold": 1,
+          "training": {
+            "group_count": 192,
+            "original_row_count": 646,
+            "group_class_counts": {
+              "0": 104,
+              "1": 88
+            },
+            "row_class_counts": {
+              "0": 333,
+              "1": 313
+            }
+          },
+          "validation": {
+            "group_count": 49,
+            "original_row_count": 165,
+            "group_class_counts": {
+              "0": 27,
+              "1": 22
+            },
+            "row_class_counts": {
+              "0": 83,
+              "1": 82
+            }
+          },
+          "distinct_group": {
+            "n": 49,
+            "class_counts": {
+              "0": 27,
+              "1": 22
+            },
+            "confusion_matrix": [
+              [
+                23,
+                4
+              ],
+              [
+                1,
+                21
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.9545454545454546,
+            "specificity": 0.8518518518518519,
+            "precision": 0.84,
+            "f1": 0.8936170212765957,
+            "accuracy": 0.8979591836734694,
+            "roc_auc": 0.9545454545454546,
+            "denominators": {
+              "sensitivity": 22,
+              "specificity": 27,
+              "precision": 25,
+              "f1": 47,
+              "accuracy": 49,
+              "roc_auc_positive_negative_pairs": 594
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          },
+          "original_row_weighted": {
+            "n": 165,
+            "class_counts": {
+              "0": 83,
+              "1": 82
+            },
+            "confusion_matrix": [
+              [
+                71,
+                12
+              ],
+              [
+                3,
+                79
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.9634146341463414,
+            "specificity": 0.8554216867469879,
+            "precision": 0.8681318681318682,
+            "f1": 0.9132947976878613,
+            "accuracy": 0.9090909090909091,
+            "roc_auc": 0.9585659712018807,
+            "denominators": {
+              "sensitivity": 82,
+              "specificity": 83,
+              "precision": 91,
+              "f1": 173,
+              "accuracy": 165,
+              "roc_auc_positive_negative_pairs": 6806
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          }
+        },
+        {
+          "fold": 2,
+          "training": {
+            "group_count": 193,
+            "original_row_count": 647,
+            "group_class_counts": {
+              "0": 105,
+              "1": 88
+            },
+            "row_class_counts": {
+              "0": 332,
+              "1": 315
+            }
+          },
+          "validation": {
+            "group_count": 48,
+            "original_row_count": 164,
+            "group_class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "row_class_counts": {
+              "0": 84,
+              "1": 80
+            }
+          },
+          "distinct_group": {
+            "n": 48,
+            "class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "confusion_matrix": [
+              [
+                23,
+                3
+              ],
+              [
+                1,
+                21
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.9545454545454546,
+            "specificity": 0.8846153846153846,
+            "precision": 0.875,
+            "f1": 0.9130434782608695,
+            "accuracy": 0.9166666666666666,
+            "roc_auc": 0.965034965034965,
+            "denominators": {
+              "sensitivity": 22,
+              "specificity": 26,
+              "precision": 24,
+              "f1": 46,
+              "accuracy": 48,
+              "roc_auc_positive_negative_pairs": 572
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          },
+          "original_row_weighted": {
+            "n": 164,
+            "class_counts": {
+              "0": 84,
+              "1": 80
+            },
+            "confusion_matrix": [
+              [
+                75,
+                9
+              ],
+              [
+                3,
+                77
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.9625,
+            "specificity": 0.8928571428571429,
+            "precision": 0.8953488372093024,
+            "f1": 0.927710843373494,
+            "accuracy": 0.926829268292683,
+            "roc_auc": 0.9700892857142858,
+            "denominators": {
+              "sensitivity": 80,
+              "specificity": 84,
+              "precision": 86,
+              "f1": 166,
+              "accuracy": 164,
+              "roc_auc_positive_negative_pairs": 6720
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          }
+        },
+        {
+          "fold": 3,
+          "training": {
+            "group_count": 193,
+            "original_row_count": 647,
+            "group_class_counts": {
+              "0": 105,
+              "1": 88
+            },
+            "row_class_counts": {
+              "0": 328,
+              "1": 319
+            }
+          },
+          "validation": {
+            "group_count": 48,
+            "original_row_count": 164,
+            "group_class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "row_class_counts": {
+              "0": 88,
+              "1": 76
+            }
+          },
+          "distinct_group": {
+            "n": 48,
+            "class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "confusion_matrix": [
+              [
+                25,
+                1
+              ],
+              [
+                4,
+                18
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.8181818181818182,
+            "specificity": 0.9615384615384616,
+            "precision": 0.9473684210526315,
+            "f1": 0.8780487804878049,
+            "accuracy": 0.8958333333333334,
+            "roc_auc": 0.965034965034965,
+            "denominators": {
+              "sensitivity": 22,
+              "specificity": 26,
+              "precision": 19,
+              "f1": 41,
+              "accuracy": 48,
+              "roc_auc_positive_negative_pairs": 572
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          },
+          "original_row_weighted": {
+            "n": 164,
+            "class_counts": {
+              "0": 88,
+              "1": 76
+            },
+            "confusion_matrix": [
+              [
+                84,
+                4
+              ],
+              [
+                13,
+                63
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.8289473684210527,
+            "specificity": 0.9545454545454546,
+            "precision": 0.9402985074626866,
+            "f1": 0.8811188811188811,
+            "accuracy": 0.8963414634146342,
+            "roc_auc": 0.9651614832535885,
+            "denominators": {
+              "sensitivity": 76,
+              "specificity": 88,
+              "precision": 67,
+              "f1": 143,
+              "accuracy": 164,
+              "roc_auc_positive_negative_pairs": 6688
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          }
+        },
+        {
+          "fold": 4,
+          "training": {
+            "group_count": 193,
+            "original_row_count": 652,
+            "group_class_counts": {
+              "0": 105,
+              "1": 88
+            },
+            "row_class_counts": {
+              "0": 336,
+              "1": 316
+            }
+          },
+          "validation": {
+            "group_count": 48,
+            "original_row_count": 159,
+            "group_class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "row_class_counts": {
+              "0": 80,
+              "1": 79
+            }
+          },
+          "distinct_group": {
+            "n": 48,
+            "class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "confusion_matrix": [
+              [
+                25,
+                1
+              ],
+              [
+                6,
+                16
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.7272727272727273,
+            "specificity": 0.9615384615384616,
+            "precision": 0.9411764705882353,
+            "f1": 0.8205128205128205,
+            "accuracy": 0.8541666666666666,
+            "roc_auc": 0.9370629370629371,
+            "denominators": {
+              "sensitivity": 22,
+              "specificity": 26,
+              "precision": 17,
+              "f1": 39,
+              "accuracy": 48,
+              "roc_auc_positive_negative_pairs": 572
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          },
+          "original_row_weighted": {
+            "n": 159,
+            "class_counts": {
+              "0": 80,
+              "1": 79
+            },
+            "confusion_matrix": [
+              [
+                77,
+                3
+              ],
+              [
+                24,
+                55
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.6962025316455697,
+            "specificity": 0.9625,
+            "precision": 0.9482758620689655,
+            "f1": 0.8029197080291971,
+            "accuracy": 0.8301886792452831,
+            "roc_auc": 0.9319620253164557,
+            "denominators": {
+              "sensitivity": 79,
+              "specificity": 80,
+              "precision": 58,
+              "f1": 137,
+              "accuracy": 159,
+              "roc_auc_positive_negative_pairs": 6320
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          }
+        },
+        {
+          "fold": 5,
+          "training": {
+            "group_count": 193,
+            "original_row_count": 652,
+            "group_class_counts": {
+              "0": 105,
+              "1": 88
+            },
+            "row_class_counts": {
+              "0": 335,
+              "1": 317
+            }
+          },
+          "validation": {
+            "group_count": 48,
+            "original_row_count": 159,
+            "group_class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "row_class_counts": {
+              "0": 81,
+              "1": 78
+            }
+          },
+          "distinct_group": {
+            "n": 48,
+            "class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "confusion_matrix": [
+              [
+                20,
+                6
+              ],
+              [
+                4,
+                18
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.8181818181818182,
+            "specificity": 0.7692307692307693,
+            "precision": 0.75,
+            "f1": 0.782608695652174,
+            "accuracy": 0.7916666666666666,
+            "roc_auc": 0.9020979020979021,
+            "denominators": {
+              "sensitivity": 22,
+              "specificity": 26,
+              "precision": 24,
+              "f1": 46,
+              "accuracy": 48,
+              "roc_auc_positive_negative_pairs": 572
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          },
+          "original_row_weighted": {
+            "n": 159,
+            "class_counts": {
+              "0": 81,
+              "1": 78
+            },
+            "confusion_matrix": [
+              [
+                63,
+                18
+              ],
+              [
+                14,
+                64
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.8205128205128205,
+            "specificity": 0.7777777777777778,
+            "precision": 0.7804878048780488,
+            "f1": 0.8,
+            "accuracy": 0.7987421383647799,
+            "roc_auc": 0.9023425134536246,
+            "denominators": {
+              "sensitivity": 78,
+              "specificity": 81,
+              "precision": 82,
+              "f1": 160,
+              "accuracy": 159,
+              "roc_auc_positive_negative_pairs": 6318
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          }
+        }
+      ],
+      "cv_summary": {
+        "distinct_group": {
+          "mean_auc": 0.9447552447552446,
+          "sample_sd_auc": 0.02644429426739725
+        },
+        "original_row_weighted": {
+          "mean_auc": 0.945624255787967,
+          "sample_sd_auc": 0.028318256942946457
+        }
+      },
+      "test": {
+        "distinct_group": {
+          "n": 61,
+          "class_counts": {
+            "0": 33,
+            "1": 28
+          },
+          "confusion_matrix": [
+            [
+              29,
+              4
+            ],
+            [
+              10,
+              18
+            ]
+          ],
+          "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+          "sensitivity": 0.6428571428571429,
+          "specificity": 0.8787878787878788,
+          "precision": 0.8181818181818182,
+          "f1": 0.72,
+          "accuracy": 0.7704918032786885,
+          "roc_auc": 0.8409090909090909,
+          "denominators": {
+            "sensitivity": 28,
+            "specificity": 33,
+            "precision": 22,
+            "f1": 50,
+            "accuracy": 61,
+            "roc_auc_positive_negative_pairs": 924
+          },
+          "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+        },
+        "original_row_weighted": {
+          "n": 214,
+          "class_counts": {
+            "0": 110,
+            "1": 104
+          },
+          "confusion_matrix": [
+            [
+              96,
+              14
+            ],
+            [
+              38,
+              66
+            ]
+          ],
+          "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+          "sensitivity": 0.6346153846153846,
+          "specificity": 0.8727272727272727,
+          "precision": 0.825,
+          "f1": 0.717391304347826,
+          "accuracy": 0.7570093457943925,
+          "roc_auc": 0.8381118881118881,
+          "denominators": {
+            "sensitivity": 104,
+            "specificity": 110,
+            "precision": 80,
+            "f1": 184,
+            "accuracy": 214,
+            "roc_auc_positive_negative_pairs": 11440
+          },
+          "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+        }
+      }
+    },
+    "mode_plus_indicator": {
+      "cv_folds": [
+        {
+          "fold": 1,
+          "training": {
+            "group_count": 192,
+            "original_row_count": 646,
+            "group_class_counts": {
+              "0": 104,
+              "1": 88
+            },
+            "row_class_counts": {
+              "0": 333,
+              "1": 313
+            }
+          },
+          "validation": {
+            "group_count": 49,
+            "original_row_count": 165,
+            "group_class_counts": {
+              "0": 27,
+              "1": 22
+            },
+            "row_class_counts": {
+              "0": 83,
+              "1": 82
+            }
+          },
+          "distinct_group": {
+            "n": 49,
+            "class_counts": {
+              "0": 27,
+              "1": 22
+            },
+            "confusion_matrix": [
+              [
+                23,
+                4
+              ],
+              [
+                1,
+                21
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.9545454545454546,
+            "specificity": 0.8518518518518519,
+            "precision": 0.84,
+            "f1": 0.8936170212765957,
+            "accuracy": 0.8979591836734694,
+            "roc_auc": 0.9545454545454546,
+            "denominators": {
+              "sensitivity": 22,
+              "specificity": 27,
+              "precision": 25,
+              "f1": 47,
+              "accuracy": 49,
+              "roc_auc_positive_negative_pairs": 594
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          },
+          "original_row_weighted": {
+            "n": 165,
+            "class_counts": {
+              "0": 83,
+              "1": 82
+            },
+            "confusion_matrix": [
+              [
+                71,
+                12
+              ],
+              [
+                3,
+                79
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.9634146341463414,
+            "specificity": 0.8554216867469879,
+            "precision": 0.8681318681318682,
+            "f1": 0.9132947976878613,
+            "accuracy": 0.9090909090909091,
+            "roc_auc": 0.9585659712018807,
+            "denominators": {
+              "sensitivity": 82,
+              "specificity": 83,
+              "precision": 91,
+              "f1": 173,
+              "accuracy": 165,
+              "roc_auc_positive_negative_pairs": 6806
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          }
+        },
+        {
+          "fold": 2,
+          "training": {
+            "group_count": 193,
+            "original_row_count": 647,
+            "group_class_counts": {
+              "0": 105,
+              "1": 88
+            },
+            "row_class_counts": {
+              "0": 332,
+              "1": 315
+            }
+          },
+          "validation": {
+            "group_count": 48,
+            "original_row_count": 164,
+            "group_class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "row_class_counts": {
+              "0": 84,
+              "1": 80
+            }
+          },
+          "distinct_group": {
+            "n": 48,
+            "class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "confusion_matrix": [
+              [
+                23,
+                3
+              ],
+              [
+                1,
+                21
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.9545454545454546,
+            "specificity": 0.8846153846153846,
+            "precision": 0.875,
+            "f1": 0.9130434782608695,
+            "accuracy": 0.9166666666666666,
+            "roc_auc": 0.965034965034965,
+            "denominators": {
+              "sensitivity": 22,
+              "specificity": 26,
+              "precision": 24,
+              "f1": 46,
+              "accuracy": 48,
+              "roc_auc_positive_negative_pairs": 572
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          },
+          "original_row_weighted": {
+            "n": 164,
+            "class_counts": {
+              "0": 84,
+              "1": 80
+            },
+            "confusion_matrix": [
+              [
+                75,
+                9
+              ],
+              [
+                3,
+                77
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.9625,
+            "specificity": 0.8928571428571429,
+            "precision": 0.8953488372093024,
+            "f1": 0.927710843373494,
+            "accuracy": 0.926829268292683,
+            "roc_auc": 0.9700892857142858,
+            "denominators": {
+              "sensitivity": 80,
+              "specificity": 84,
+              "precision": 86,
+              "f1": 166,
+              "accuracy": 164,
+              "roc_auc_positive_negative_pairs": 6720
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          }
+        },
+        {
+          "fold": 3,
+          "training": {
+            "group_count": 193,
+            "original_row_count": 647,
+            "group_class_counts": {
+              "0": 105,
+              "1": 88
+            },
+            "row_class_counts": {
+              "0": 328,
+              "1": 319
+            }
+          },
+          "validation": {
+            "group_count": 48,
+            "original_row_count": 164,
+            "group_class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "row_class_counts": {
+              "0": 88,
+              "1": 76
+            }
+          },
+          "distinct_group": {
+            "n": 48,
+            "class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "confusion_matrix": [
+              [
+                25,
+                1
+              ],
+              [
+                5,
+                17
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.7727272727272727,
+            "specificity": 0.9615384615384616,
+            "precision": 0.9444444444444444,
+            "f1": 0.85,
+            "accuracy": 0.875,
+            "roc_auc": 0.965034965034965,
+            "denominators": {
+              "sensitivity": 22,
+              "specificity": 26,
+              "precision": 18,
+              "f1": 40,
+              "accuracy": 48,
+              "roc_auc_positive_negative_pairs": 572
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          },
+          "original_row_weighted": {
+            "n": 164,
+            "class_counts": {
+              "0": 88,
+              "1": 76
+            },
+            "confusion_matrix": [
+              [
+                84,
+                4
+              ],
+              [
+                17,
+                59
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.7763157894736842,
+            "specificity": 0.9545454545454546,
+            "precision": 0.9365079365079365,
+            "f1": 0.8489208633093526,
+            "accuracy": 0.8719512195121951,
+            "roc_auc": 0.9651614832535885,
+            "denominators": {
+              "sensitivity": 76,
+              "specificity": 88,
+              "precision": 63,
+              "f1": 139,
+              "accuracy": 164,
+              "roc_auc_positive_negative_pairs": 6688
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          }
+        },
+        {
+          "fold": 4,
+          "training": {
+            "group_count": 193,
+            "original_row_count": 652,
+            "group_class_counts": {
+              "0": 105,
+              "1": 88
+            },
+            "row_class_counts": {
+              "0": 336,
+              "1": 316
+            }
+          },
+          "validation": {
+            "group_count": 48,
+            "original_row_count": 159,
+            "group_class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "row_class_counts": {
+              "0": 80,
+              "1": 79
+            }
+          },
+          "distinct_group": {
+            "n": 48,
+            "class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "confusion_matrix": [
+              [
+                25,
+                1
+              ],
+              [
+                6,
+                16
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.7272727272727273,
+            "specificity": 0.9615384615384616,
+            "precision": 0.9411764705882353,
+            "f1": 0.8205128205128205,
+            "accuracy": 0.8541666666666666,
+            "roc_auc": 0.9370629370629371,
+            "denominators": {
+              "sensitivity": 22,
+              "specificity": 26,
+              "precision": 17,
+              "f1": 39,
+              "accuracy": 48,
+              "roc_auc_positive_negative_pairs": 572
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          },
+          "original_row_weighted": {
+            "n": 159,
+            "class_counts": {
+              "0": 80,
+              "1": 79
+            },
+            "confusion_matrix": [
+              [
+                77,
+                3
+              ],
+              [
+                24,
+                55
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.6962025316455697,
+            "specificity": 0.9625,
+            "precision": 0.9482758620689655,
+            "f1": 0.8029197080291971,
+            "accuracy": 0.8301886792452831,
+            "roc_auc": 0.9319620253164557,
+            "denominators": {
+              "sensitivity": 79,
+              "specificity": 80,
+              "precision": 58,
+              "f1": 137,
+              "accuracy": 159,
+              "roc_auc_positive_negative_pairs": 6320
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          }
+        },
+        {
+          "fold": 5,
+          "training": {
+            "group_count": 193,
+            "original_row_count": 652,
+            "group_class_counts": {
+              "0": 105,
+              "1": 88
+            },
+            "row_class_counts": {
+              "0": 335,
+              "1": 317
+            }
+          },
+          "validation": {
+            "group_count": 48,
+            "original_row_count": 159,
+            "group_class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "row_class_counts": {
+              "0": 81,
+              "1": 78
+            }
+          },
+          "distinct_group": {
+            "n": 48,
+            "class_counts": {
+              "0": 26,
+              "1": 22
+            },
+            "confusion_matrix": [
+              [
+                20,
+                6
+              ],
+              [
+                4,
+                18
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.8181818181818182,
+            "specificity": 0.7692307692307693,
+            "precision": 0.75,
+            "f1": 0.782608695652174,
+            "accuracy": 0.7916666666666666,
+            "roc_auc": 0.9038461538461539,
+            "denominators": {
+              "sensitivity": 22,
+              "specificity": 26,
+              "precision": 24,
+              "f1": 46,
+              "accuracy": 48,
+              "roc_auc_positive_negative_pairs": 572
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          },
+          "original_row_weighted": {
+            "n": 159,
+            "class_counts": {
+              "0": 81,
+              "1": 78
+            },
+            "confusion_matrix": [
+              [
+                63,
+                18
+              ],
+              [
+                14,
+                64
+              ]
+            ],
+            "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+            "sensitivity": 0.8205128205128205,
+            "specificity": 0.7777777777777778,
+            "precision": 0.7804878048780488,
+            "f1": 0.8,
+            "accuracy": 0.7987421383647799,
+            "roc_auc": 0.9047166824944602,
+            "denominators": {
+              "sensitivity": 78,
+              "specificity": 81,
+              "precision": 82,
+              "f1": 160,
+              "accuracy": 159,
+              "roc_auc_positive_negative_pairs": 6318
+            },
+            "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+          }
+        }
+      ],
+      "cv_summary": {
+        "distinct_group": {
+          "mean_auc": 0.9451048951048951,
+          "sample_sd_auc": 0.02574148576126706
+        },
+        "original_row_weighted": {
+          "mean_auc": 0.9460990895961341,
+          "sample_sd_auc": 0.02741663592915471
+        }
+      },
+      "test": {
+        "distinct_group": {
+          "n": 61,
+          "class_counts": {
+            "0": 33,
+            "1": 28
+          },
+          "confusion_matrix": [
+            [
+              30,
+              3
+            ],
+            [
+              10,
+              18
+            ]
+          ],
+          "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+          "sensitivity": 0.6428571428571429,
+          "specificity": 0.9090909090909091,
+          "precision": 0.8571428571428571,
+          "f1": 0.7346938775510204,
+          "accuracy": 0.7868852459016393,
+          "roc_auc": 0.8430735930735931,
+          "denominators": {
+            "sensitivity": 28,
+            "specificity": 33,
+            "precision": 21,
+            "f1": 49,
+            "accuracy": 61,
+            "roc_auc_positive_negative_pairs": 924
+          },
+          "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+        },
+        "original_row_weighted": {
+          "n": 214,
+          "class_counts": {
+            "0": 110,
+            "1": 104
+          },
+          "confusion_matrix": [
+            [
+              100,
+              10
+            ],
+            [
+              38,
+              66
+            ]
+          ],
+          "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+          "sensitivity": 0.6346153846153846,
+          "specificity": 0.9090909090909091,
+          "precision": 0.868421052631579,
+          "f1": 0.7333333333333333,
+          "accuracy": 0.7757009345794392,
+          "roc_auc": 0.843006993006993,
+          "denominators": {
+            "sensitivity": 104,
+            "specificity": 110,
+            "precision": 76,
+            "f1": 180,
+            "accuracy": 214,
+            "roc_auc_positive_negative_pairs": 11440
+          },
+          "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent"
+        }
+      }
+    }
+  }
+}

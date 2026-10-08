@@ -1,0 +1,93 @@
+{
+  "experiment": "repetition_weighted_training",
+  "primary_directory": "..",
+  "primary_config": {
+    "source_path": "C:/Users/DELL/Desktop/DSAI SOCIETY/heart.csv",
+    "source_sha256": "ddb2996b2f4db2e00aad13f4518200179ff69f79093838e3c21ffa672ebec0f1",
+    "expected_rows": 1025,
+    "expected_groups": 302,
+    "features": [
+      "age",
+      "sex",
+      "cp",
+      "trestbps",
+      "chol",
+      "fbs",
+      "restecg",
+      "thalach",
+      "exang",
+      "oldpeak",
+      "slope",
+      "ca",
+      "thal"
+    ],
+    "numeric_features": [
+      "age",
+      "trestbps",
+      "chol",
+      "thalach",
+      "oldpeak"
+    ],
+    "categorical_features": [
+      "sex",
+      "cp",
+      "fbs",
+      "restecg",
+      "exang",
+      "slope",
+      "ca",
+      "thal"
+    ],
+    "seed": 42,
+    "test_fraction": 0.2,
+    "cv_folds": 5,
+    "candidate_order": [
+      "majority",
+      "logistic_regression"
+    ],
+    "selection_metric": "mean_distinct_group_validation_roc_auc",
+    "tie_break": "first in candidate_order",
+    "threshold": 0.5,
+    "logistic_regression": {
+      "C": 1.0,
+      "solver": "lbfgs",
+      "penalty": "l2",
+      "max_iter": 2000,
+      "tol": 0.0001,
+      "class_weight": null
+    },
+    "encoding_assumptions": "Numeric/categorical roles are modeling assumptions, not verified feature definitions. Treat ca and slope as nominal, not ordinal; retain all observed codes including ca=4 and thal=0. Learn one-hot categories only on training groups, handle_unknown=ignore, drop=None. Standardize numeric features only on training groups. No imputation, feature selection, resampling, or label changes. Positive class is numeric target=1, whose clinical meaning remains unverified.",
+    "primary_training": "One representative (first source occurrence) per distinct feature group; no sample or class weighting.",
+    "grouping": "SHA-256 of canonical JSON containing ordered feature names and parsed raw cell strings, excluding target. Verify full key equality and numeric-normalized grouping equivalence. These are feature groups, not patient IDs."
+  },
+  "primary_file_sha256": {
+    "audit_heart.py": "43d9afca4ab391e12b9e9f61fb1106b99e6f2b7fbfa54ffb87c905b24895a6bf",
+    "audit_report.json": "0786cfdab56fbd023b6ad7350adb25b0c992e5609cd4c5e088ec91bacadb3ba5",
+    "audit_report.md": "37b028f7020b458d21a832c86721ea6b9df44d10b6b36bd787b0063be09f0c82",
+    "baseline_checks.json": "7fd51afe5ad7ce597a889d794939008e1871de813af06dacc3f7dcb70e5a6eaa",
+    "baseline_config.json": "a6712377929eea7631434b5aad5495a57ed0365c326dd62a4ae3a07f8a748645",
+    "baseline_environment.json": "252c9e8eecdf2161114c98913f999f3faf6621b839d0aadb1603849e8b1ba8ae",
+    "baseline_execution.json": "daaf0173084ea6e23380446ffe7481da8261cab5bb1b576716c0ea72ce4a5f38",
+    "baseline_metrics.json": "0affa61ad5b898dfac05dcbb498dbe11b4032a5598890391105e37b39a5da88f",
+    "baseline_model.joblib": "37c81c0b73c69d7b7a48519aeafd0a695b6ad1922ffb68519ccba16390a1ef4a",
+    "baseline_report.md": "13b0e19b956c2af3a487c70be0681249dc55049d9ea2044e996fbfb238e98653",
+    "baseline_requirements.txt": "2a42ef38db2089a7485dd186d851558eafbe622e762fb12ea62040ee5f832bcd",
+    "baseline_verification.json": "7b983b4723441b51113241719d25f3bb2549fa28175f71cf557dec1120f5660f",
+    "cv_metrics.json": "bb0e39926c92a3dfaa45b43c8244d36b787d77f787ac1749f0ad124e5fbd1f08",
+    "cv_predictions.csv": "9e47182ea56146929a7285d05c9c866463b131e52aebdb3369195e4f3696ac37",
+    "duplicate_groups.md": "e9f58a8f28aa339e485b5124ae44f7defa592a1cec92f69a3cf928c43a5efcf8",
+    "group_manifest.csv": "b65ee4b8f52d9e87ec090f4a87517c318f13d2c791a6f33f08f8f4550a92dcdf",
+    "group_split.csv": "b5eecf09e30031a8f8243aaa3eecc30bab40eff4194d2825a39615b262ea3d89",
+    "model_selection.json": "4fb4f9addfd7544f567c553cc1af0f53d461a8e3ba4f08177882040adc469063",
+    "run_baseline.py": "d1db919310d4e86e99e1a673b3b51153b36648d128cffca332e3f49666bc46f3",
+    "test_predictions.csv": "2102aa8bd31f50bd6523e07b6fbd0160d2f82009e011389c972f65f23bcf57c4",
+    "test_row_predictions.csv": "b6e6738ba8a4ca3a1db5c447ae966168aaa8286be52e7e6fcfe090853c9440ba",
+    "verify_baseline.py": "0e9ef5ce06eb74eab9580ba4f151e13525ea806beb907630fd214105f1f20289",
+    "__pycache__/run_baseline.cpython-312.pyc": "0ef7ec487fe9770ce61d5ee8748779d49e48fec2dd16dbd0dcb1a96236692f7d"
+  },
+  "model": "logistic_regression",
+  "selection": "none; frozen model and settings; no search",
+  "training": "Every eligible original source row exactly once; repeated feature records retained",
+  "evaluation": "Secondary exploratory comparison on the same previously inspected holdout",
+  "source_sha256": "ddb2996b2f4db2e00aad13f4518200179ff69f79093838e3c21ffa672ebec0f1"
+}

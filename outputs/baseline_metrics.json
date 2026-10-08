@@ -1,0 +1,250 @@
+{
+  "experiment": "primary_one_row_per_training_group",
+  "selected_model": "logistic_regression",
+  "positive_class": "numeric target=1; clinical semantics unverified",
+  "counts": {
+    "all": {
+      "groups": 302,
+      "original_rows": 1025,
+      "group_class_counts": {
+        "0": 138,
+        "1": 164
+      },
+      "row_class_counts": {
+        "0": 499,
+        "1": 526
+      }
+    },
+    "development": {
+      "groups": 241,
+      "original_rows": 811,
+      "group_class_counts": {
+        "0": 110,
+        "1": 131
+      },
+      "row_class_counts": {
+        "0": 395,
+        "1": 416
+      }
+    },
+    "test": {
+      "groups": 61,
+      "original_rows": 214,
+      "group_class_counts": {
+        "0": 28,
+        "1": 33
+      },
+      "row_class_counts": {
+        "0": 104,
+        "1": 110
+      }
+    },
+    "cv": [
+      {
+        "fold": 1,
+        "training": {
+          "groups": 192,
+          "original_rows": 646,
+          "group_class_counts": {
+            "0": 88,
+            "1": 104
+          },
+          "row_class_counts": {
+            "0": 313,
+            "1": 333
+          }
+        },
+        "validation": {
+          "groups": 49,
+          "original_rows": 165,
+          "group_class_counts": {
+            "0": 22,
+            "1": 27
+          },
+          "row_class_counts": {
+            "0": 82,
+            "1": 83
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "training": {
+          "groups": 193,
+          "original_rows": 647,
+          "group_class_counts": {
+            "0": 88,
+            "1": 105
+          },
+          "row_class_counts": {
+            "0": 315,
+            "1": 332
+          }
+        },
+        "validation": {
+          "groups": 48,
+          "original_rows": 164,
+          "group_class_counts": {
+            "0": 22,
+            "1": 26
+          },
+          "row_class_counts": {
+            "0": 80,
+            "1": 84
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "training": {
+          "groups": 193,
+          "original_rows": 647,
+          "group_class_counts": {
+            "0": 88,
+            "1": 105
+          },
+          "row_class_counts": {
+            "0": 319,
+            "1": 328
+          }
+        },
+        "validation": {
+          "groups": 48,
+          "original_rows": 164,
+          "group_class_counts": {
+            "0": 22,
+            "1": 26
+          },
+          "row_class_counts": {
+            "0": 76,
+            "1": 88
+          }
+        }
+      },
+      {
+        "fold": 4,
+        "training": {
+          "groups": 193,
+          "original_rows": 652,
+          "group_class_counts": {
+            "0": 88,
+            "1": 105
+          },
+          "row_class_counts": {
+            "0": 316,
+            "1": 336
+          }
+        },
+        "validation": {
+          "groups": 48,
+          "original_rows": 159,
+          "group_class_counts": {
+            "0": 22,
+            "1": 26
+          },
+          "row_class_counts": {
+            "0": 79,
+            "1": 80
+          }
+        }
+      },
+      {
+        "fold": 5,
+        "training": {
+          "groups": 193,
+          "original_rows": 652,
+          "group_class_counts": {
+            "0": 88,
+            "1": 105
+          },
+          "row_class_counts": {
+            "0": 317,
+            "1": 335
+          }
+        },
+        "validation": {
+          "groups": 48,
+          "original_rows": 159,
+          "group_class_counts": {
+            "0": 22,
+            "1": 26
+          },
+          "row_class_counts": {
+            "0": 78,
+            "1": 81
+          }
+        }
+      }
+    ]
+  },
+  "distinct_group": {
+    "n": 61,
+    "class_counts": {
+      "0": 28,
+      "1": 33
+    },
+    "confusion_matrix": [
+      [
+        18,
+        10
+      ],
+      [
+        4,
+        29
+      ]
+    ],
+    "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+    "sensitivity": 0.8787878787878788,
+    "specificity": 0.6428571428571429,
+    "precision": 0.7435897435897436,
+    "f1": 0.8055555555555556,
+    "accuracy": 0.7704918032786885,
+    "roc_auc": 0.8409090909090909,
+    "denominators": {
+      "sensitivity": 33,
+      "specificity": 28,
+      "precision": 39,
+      "f1": 72,
+      "accuracy": 61,
+      "roc_auc_positive_negative_pairs": 924
+    },
+    "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent",
+    "group_count": 61,
+    "represented_original_rows": 214
+  },
+  "original_row_weighted": {
+    "n": 214,
+    "class_counts": {
+      "0": 104,
+      "1": 110
+    },
+    "confusion_matrix": [
+      [
+        66,
+        38
+      ],
+      [
+        14,
+        96
+      ]
+    ],
+    "confusion_matrix_order": "rows=true [0,1], columns=predicted [0,1]",
+    "sensitivity": 0.8727272727272727,
+    "specificity": 0.6346153846153846,
+    "precision": 0.7164179104477612,
+    "f1": 0.7868852459016393,
+    "accuracy": 0.7570093457943925,
+    "roc_auc": 0.8381118881118882,
+    "denominators": {
+      "sensitivity": 110,
+      "specificity": 104,
+      "precision": 134,
+      "f1": 244,
+      "accuracy": 214,
+      "roc_auc_positive_negative_pairs": 11440
+    },
+    "undefined_policy": "null if denominator is zero; ROC-AUC null if either label is absent",
+    "group_count": 61,
+    "original_row_count": 214
+  }
+}

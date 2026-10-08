@@ -1,0 +1,53 @@
+{
+  "status": "PASS_WITH_WARNINGS",
+  "errors": [],
+  "checks": [
+    "Source SHA-256 and all 67 protected output files match pre-run hashes",
+    "302 corrected UCI labels, missing-code evidence, raw feature hashes, 1025 row links and exact saved split/folds checked",
+    "Six fits: exact training membership, zero validation/test group overlap, training-only preprocessing, fixed MLP settings and one test inference after CV; warning lists inspected separately",
+    "Both models: all five CV folds and test metrics independently recomputed by direct counts and pairwise AUC, including original-row expansion, denominators and differences",
+    "Saved model architecture, preprocessing and test probabilities independently checked with explicit matrix multiplication and sigmoid",
+    "Source and protected hashes rechecked at verification completion"
+  ],
+  "no_fitting_or_tuning_in_verifier": true,
+  "scope": "Recomputed saved metrics and manually evaluated the saved final model. Membership/statistic checks plus execution trace and fixed code support no train/validation/test leakage in this run; the holdout is previously inspected and not independent.",
+  "source_sha256": "ddb2996b2f4db2e00aad13f4518200179ff69f79093838e3c21ffa672ebec0f1",
+  "protected_files_unchanged": 67,
+  "fit_warnings": [
+    {
+      "type": "ConvergenceWarning",
+      "message": "lbfgs failed to converge after 2000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=2000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    },
+    {
+      "type": "ConvergenceWarning",
+      "message": "lbfgs failed to converge after 2000 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=2000).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+    }
+  ],
+  "convergence_check": {
+    "status": "REVIEW_REQUIRED",
+    "fits_with_warnings": [
+      "cv_fit_2",
+      "cv_fit_3"
+    ],
+    "note": "Warnings do not invalidate arithmetic/integrity checks, but convergence was not established for these fits. No retries or tuning were performed."
+  },
+  "new_artifact_sha256": {
+    "configuration.json": "990f6e3a6c989f0cb59c872ad87660fd8056e055603f5088ff35bb628868c192",
+    "cv_predictions.csv": "5c71f8eaf3a7875dbeb96b5115f9182774c932497d52173fccda5efb932d8f27",
+    "cv_row_predictions.csv": "cacb1c19a9d0816917a38779e3d5adbd12ac31a07aeeae1b37f7bde3c2f152da",
+    "environment.json": "4ffabd29f7ca0034e2a1a5e9de8045737826c50f562703dd347c74098e57915f",
+    "execution.json": "c18185ec4c8b4717d299064293e5941e996f21be3b54d15efc0fae9a87147016",
+    "group_split_manifest.csv": "082ef2d5ba1ff63ba5172f4ee216135be4cfd45173e6c9306d6a1d0ef3ea2b20",
+    "mlp_model.joblib": "d3a1ef1c24bb6a01f2a7379304bae5e983632b870352e142af66d014a25cf420",
+    "model_comparison_config.json": "990f6e3a6c989f0cb59c872ad87660fd8056e055603f5088ff35bb628868c192",
+    "model_comparison_metrics.json": "c1f1a7e6484d1aba8a76e5753719071691b4afae23615db9756a21332a285db0",
+    "model_comparison_report.md": "91ed433ca7f69ebc7de8bbeb46de2e45f9fc1bca629b30b1bd98ad3b79e42f1f",
+    "README.md": "63f5a8cb295158e74a688e4e040d6b951d9774bc035e311343f7a49b2b959f14",
+    "requirements.txt": "2a42ef38db2089a7485dd186d851558eafbe622e762fb12ea62040ee5f832bcd",
+    "run_model_comparison.py": "66bd1d403f5560c5a373f4d9acc25e9aad48521aa264ac3337bf5410f0662241",
+    "run_status.json": "2b905256cbfa2ad5977f0afe22783b45d0401d49ebe6bb8124734aa8d2637a87",
+    "test_predictions.csv": "d87515c2adb246828428c814e2145b77909ee7ac7b4c3286fd5c36fb4760a92a",
+    "test_row_predictions.csv": "ab943395f7beeaaf802367db1611afafd7fa3574dae458da23c0dc17435a082a",
+    "verify_model_comparison.py": "0af01f3e7a7e56f7395b0e759c4392bb4a9c5fe1e9c2ea3ccb3b78349d3c41dc"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "python": "3.12.10",
+  "numpy": "2.3.3",
+  "scipy": "1.16.2",
+  "scikit-learn": "1.7.2",
+  "joblib": "1.5.2",
+  "script_sha256": "d1db919310d4e86e99e1a673b3b51153b36648d128cffca332e3f49666bc46f3",
+  "config_sha256": "a6712377929eea7631434b5aad5495a57ed0365c326dd62a4ae3a07f8a748645",
+  "executable": "C:\\Users\\DELL\\Documents\\Codex\\2026-09-27\\we-are-building-cardiolens-ai-an\\work\\baseline-env\\Scripts\\python.exe",
+  "argv": [
+    "outputs/run_baseline.py",
+    "--config",
+    "outputs/baseline_config.json"
+  ]
+}
